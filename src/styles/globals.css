@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
+@layer components {
+  .card1 {
+    --edge-size: 2.5em;
+    clip-path: polygon(
+      0 0, 
+      100% 0, 
+      100% calc(100% - var(--edge-size)), 
+      calc(100% - var(--edge-size)) 100%, 
+      0 100%, 
+      0% 0%
+    );
+  }
+
+  .min-h-[fit-content] {
+    min-height: fit-content;
+  }
+
+  .card2 {
+    --edge-size: 2.5em;
+    clip-path: polygon(
+      0 0%, 
+      calc(100% - var(--edge-size)) 0, 
+      100% var(--edge-size),
+      100% calc(100% - var(--edge-size)), 
+      calc(100% - var(--edge-size)) 100%,  
+      100% 100%, 
+      0 100%, 
+      0% 0%
+    );
+  }
+
+  .card3 {
+    --edge-size: 2.5em;
+    clip-path: polygon(
+      0 0%, 
+      calc(100% - var(--edge-size)) 0, 
+      100% var(--edge-size), 
+      100% 100%, 
+      0 100%, 
+      0% 0%
+    );
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('../../public/fonts/Inter-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-BlackItalic';
+  src: url('../../public/fonts/Inter-BlackItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../../public/fonts/Inter-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-BoldItalic';
+  src: url('../../public/fonts/Inter-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url('../../public/fonts/Inter-ExtraBold.otf') format('opentype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBoldItalic';
+  src: url('../../public/fonts/Inter-ExtraBoldItalic.otf') format('opentype');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../../public/fonts/Inter-ExtraLightItalic.otf') format('opentype');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../../public/fonts/Inter-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../../public/fonts/Inter-SemiBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* 
+@font-face {
+  url('../../public/fonts/Inter-ExtraLightItalic.otf') format('opentype'),
+  url('../../public/fonts/Inter-Italic.otf') format('opentype'),
+  url('../../public/fonts/Inter-Light.otf') format('opentype'),
+  url('../../public/fonts/Inter-LightItalic.otf') format('opentype'),
+  url('../../public/fonts/Inter-Medium.otf') format('opentype'),
+  url('../../public/fonts/Inter-MediumItalic.otf') format('opentype'),
+  url('../../public/fonts/Inter-Regular.otf') format('opentype'),
+  url('../../public/fonts/Inter-SemiBold.otf') format('opentype'),
+  url('../../public/fonts/Inter-SemiBoldItalic.otf') format('opentype'),
+  url('../../public/fonts/Inter-Thin.otf') format('opentype'),
+  url('../../public/fonts/Inter-ThinItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}

@@ -88,7 +88,7 @@ export default function Work() {
 
 function TagsLoading() {
   return (
-    <div>
+    <div className={`w-full h-20 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md`}>
       Tags loading...
     </div>
   );

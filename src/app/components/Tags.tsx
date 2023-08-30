@@ -25,9 +25,9 @@ export default function Tags({ className, tags, selectedTag, setSelectedTag, sel
     const [hoveredTag, setHoveredTag] = useState<string | null>(null);
 
     useEffect(() => {
-        // if (tags) {
+        if (tags) {
             setTagsArray(Array.from(tags));
-        // }
+        } 
     }, [tags]);
 
     const handleTagHover = (tag: string) => {

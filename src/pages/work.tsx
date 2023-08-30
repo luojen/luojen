@@ -82,7 +82,7 @@ export default function Work() {
                 <Suspense fallback={<RowsLoading/>}>
                   <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
                 </Suspense> */}
-                {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>}
+                {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
                 {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
             </div>
         </div>

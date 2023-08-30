@@ -27,12 +27,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
 
     // scroll to top on open
     useEffect(() => {
-        // console.log('useeffect');
-        // if (selectedProject?.id == 'impart') {
-            // console.log('selectedProject is impart')
-            window.scrollTo(0, 0); 
-        // }
-    }, []);
+        window.scrollTo(0,0);
+    }, [selectedProject]);
 
     // switch empathy map
     const handleEmpathyMapClick = () => {

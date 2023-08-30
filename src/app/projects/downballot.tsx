@@ -26,22 +26,19 @@ export default function Downballot({ className, selectedProject, setSelectedProj
 
     const [thumbnails, setThumbnails] = useState<string[]>(["/assets/downballot/prototype_1_updates_1.png", "/assets/downballot/prototype_1_extended_1.png", "/assets/downballot/prototype_1_data_1.png"]);
 
-
     // scroll to top on open
     useEffect(() => {
-        // console.log('useeffect');
-        // if (selectedProject?.id != 'downballot') {
-        //     console.log('selectedProject is downballot')
-            window.scrollTo(0, 0); 
-        // }
-    }, []);
+        window.scrollTo(0,0);
+    }, [selectedProject]);
 
     // wiggle animation
     const wiggleControls = useAnimation();
+    let animationInterval: NodeJS.Timeout;
     useEffect(() => {
-        const animationInterval = setInterval(() => {
+        animationInterval = setInterval(() => {
             wiggleControls.start({ rotate: [0, 1, -1, 1, 0] });
-        }, 2000); // Adjust the interval time as needed
+        }, 2000); 
+
         return () => {
             clearInterval(animationInterval);
         };

@@ -51,6 +51,7 @@ export default function Row({ className, project, selectedProject, setSelectedPr
         if (selectedProject?.id === project?.id) {
             setSelectedProject(null);
         } else {
+            console.log('project?.id', project?.id);
             setSelectedProject(project);
         }
     };

@@ -12,9 +12,6 @@ import {
 import Layout from '@/app/components/Layout'
 import Preview from '@/app/components/Preview'
 
-// const Tags = lazy(() => import('@/app/components/Tags'));
-// const Rows = lazy(() => import('@/app/components/Rows'));
-
 export default function Work() {
   const [data, setData] = useState<Data>([]);
   const [display, setDisplay] = useState<Data>([]);
@@ -76,12 +73,6 @@ export default function Work() {
         <div style={{ fontFamily: 'Inter-Regular', fontWeight: 'normal', fontStyle: 'normal'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
-                {/* <Suspense fallback={<TagsLoading/>}>
-                  <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
-                </Suspense>
-                <Suspense fallback={<RowsLoading/>}>
-                  <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
-                </Suspense> */}
                 {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
                 {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
             </div>

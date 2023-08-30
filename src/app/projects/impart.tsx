@@ -32,7 +32,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
             // console.log('selectedProject is impart')
             window.scrollTo(0, 0); 
         // }
-    }, [selectedProject]);
+    }, []);
 
     // switch empathy map
     const handleEmpathyMapClick = () => {
@@ -108,7 +108,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content min-h-[800px] sm:min-h-[500px] w-full mb-8 py-[30%]`} 
+                    className={`h-fit-content min-h-[800px] sm:min-h-[500px] w-full mb-8 py-60`} 
                     id="slide-2"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -117,10 +117,10 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 01. Context </div>
-                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden`}/>
                     <div className={`flex flex-col sm:flex-row h-[70%] mt-4 sm:mt-10 justify-center`}>
                         <div className={`basis-1/4 text-xl lg:text-2xl sm:text-right sm:pl-8`}> How might we make collaboration between artists feel more like play than work? </div>
-                        <div className={`flex-none w-[2px] h-full bg-black mt-2 mx-8 hidden sm:block`}/>
+                        <div className={`w-full h-[2px] bg-black flex-none block sm:hidden my-4`}/>
+                        <div className={`w-[2px] h-80vh bg-black flex-none hidden sm:block mx-10`}/>
                         <div className={`flex flex-col sm:flex-row sm:space-x-8 pr-16`}>
                             <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}><strong>Artistic collaboration builds meaningful connections </strong> and opens up opportunities for discovering new ways of creating. The initial first step toward <strong>building a network of collaborators and receiving feedback, however, is greatly inhibited by social risk and time to receive feedback.</strong></div>
                             <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}>COVID-19 limited opportunities for collaboration by reducing the chance social encounters that might yield potential collaborators.</div>

@@ -26,6 +26,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
 
     const [thumbnails, setThumbnails] = useState<string[]>(["/assets/downballot/prototype_1_updates_1.png", "/assets/downballot/prototype_1_extended_1.png", "/assets/downballot/prototype_1_data_1.png"]);
 
+
     // scroll to top on open
     useEffect(() => {
         // console.log('useeffect');
@@ -33,7 +34,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
         //     console.log('selectedProject is downballot')
             window.scrollTo(0, 0); 
         // }
-    }, [selectedProject]);
+    }, []);
 
     // wiggle animation
     const wiggleControls = useAnimation();

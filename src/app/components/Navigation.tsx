@@ -21,7 +21,7 @@ export default function Navigation({ className }: NavigationProps) {
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 1.1 }}
                 >
-                    <Link href="/" className={"px-4"}>@luojen</Link>
+                    <Link href="/" className={"px-4"}>Jen Luo</Link>
                 </motion.div>
             </div>
             <div className={"grow"}/>

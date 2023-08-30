@@ -8,13 +8,13 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={"h-screen w-screen flex flex-col"}>
       <Navigation/>
-      <AnimatePresence
+      {/* <AnimatePresence
         mode="wait"
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
-      >
+      > */}
         <Component {...pageProps}/>   
-      </AnimatePresence> 
+      {/* </AnimatePresence>  */}
     </main>
   )
 }

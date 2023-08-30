@@ -28,7 +28,10 @@ export default function Downballot({ className, selectedProject, setSelectedProj
 
     // scroll to top on open
     useEffect(() => {
-        window.scrollTo(0,0);
+        // console.log(selectedProject);
+        // setTimeout(() => {
+        //     window.scrollTo(0,0);  
+        // }, 200)
     }, [selectedProject]);
 
     // wiggle animation

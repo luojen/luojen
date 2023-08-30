@@ -27,7 +27,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
 
     // scroll to top on open
     useEffect(() => {
-        window.scrollTo(0,0);
+        // console.log(selectedProject);
+        // window.scrollTo(0,0);
     }, [selectedProject]);
 
     // switch empathy map
@@ -41,17 +42,19 @@ export default function Impart({ className, selectedProject, setSelectedProject,
 
     // wiggle animation
     const wiggleControls = useAnimation();
+    let animationInterval: NodeJS.Timeout;
     useEffect(() => {
-        const animationInterval = setInterval(() => {
+        animationInterval = setInterval(() => {
             wiggleControls.start({ rotate: [0, 1, -1, 1, 0] });
-        }, 2000); // Adjust the interval time as needed
+        }, 2000); 
+
         return () => {
             clearInterval(animationInterval);
         };
     }, [wiggleControls]);
     
     return (
-        <div className={`${className} h-full w-full relative`}>            
+        <div className={`${className} h-[50%] md:h-full w-full relative`}>            
             
             <div className={`h-full w-full mb-8`}>
 

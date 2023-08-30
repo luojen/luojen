@@ -78,7 +78,7 @@ export default function Work() {
             </div>
         </div>
       </div>
-      {selectedProject ? <Preview projectData={selectedProject} className={'w-[100%] h-[100%] lg:w-[74%] absolute top-0 right-0 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
+      {selectedProject ? <Preview projectData={selectedProject} className={'w-[100%] h-[100%] lg:w-[74%] absolute top-0 right-0 overflow-y-scroll overflow-x-hidden'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
     </Layout>
   )
 }

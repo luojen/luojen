@@ -73,9 +73,10 @@ export default function Work() {
         <div style={{ fontFamily: 'Inter-Regular', fontWeight: 'normal', fontStyle: 'normal'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
-                <Suspense fallback={<Loading/>}>
-                  {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
-                </Suspense>
+                {/* <Suspense fallback={<Loading/>}> */}
+                  
+                {/* </Suspense> */}
+                {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>}
                 {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
             </div>
         </div>
@@ -83,4 +84,12 @@ export default function Work() {
       {selectedProject ? <Preview projectData={selectedProject} className={'w-[100%] h-[100%] lg:w-[74%] absolute top-0 right-0 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
     </Layout>
   )
+}
+
+function TagsLoading() {
+  return (
+    <div>
+      Tags loading...
+    </div>
+  );
 }

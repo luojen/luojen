@@ -24,6 +24,14 @@ type DownBallotProps = {
 export default function Downballot({ className, selectedProject, setSelectedProject, projectData }: DownBallotProps) {
 
     const [thumbnails, setThumbnails] = useState<string[]>(["/assets/downballot/prototype_1_updates_1.png", "/assets/downballot/prototype_1_extended_1.png", "/assets/downballot/prototype_1_data_1.png"]);
+    
+    // image loading graphics
+    const [imageLoading, setImageLoading] = useState(true);
+    const [pulsing, setPulsing] = useState(true);
+    const imageLoaded = () => {
+        setImageLoading(false);
+        setTimeout(() => setPulsing(false), 600);
+    };
 
     // scroll to top on open
     useEffect(() => {
@@ -299,13 +307,18 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                             <img src="/assets/downballot/prototype_1_layout.png" className={`w-[70%] object-contain rounded-xl shadow-lg`}/>
                         </div>
                         <div className={`w-1/2 flex flex-col justify-center`}>
+                            {/* <div
+                                className={`${pulsing ? "animate-pulse duration-1400 ease-in-out infinite" : ""} flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}
+                                style={{ width: "600px", background: "#ccc" }}
+                            > */}
                             <motion.img 
                                 src={thumbnails[0]}
-                                className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}
+                                className={``}
                                 animate={wiggleControls}
                                 onClick={() => handleThumbnailClick(0)}
                                 whileHover={{ scale: 1.1 }}
                             />
+                            {/* </div> */}
                             <motion.img 
                                 src={thumbnails[1]} 
                                 className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}

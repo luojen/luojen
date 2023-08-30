@@ -1,6 +1,6 @@
 import Tags from '@/app/components/Tags'
 import Rows from '@/app/components/Rows'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { Data, Project } from '@/app/types/Data'
 import {
   motion,
@@ -11,6 +11,7 @@ import {
 } from "framer-motion"
 import Layout from '@/app/components/Layout'
 import Preview from '@/app/components/Preview'
+import Loading from '@/app/components/Loading'
 
 export default function Work() {
   const [data, setData] = useState<Data>([]);
@@ -72,7 +73,9 @@ export default function Work() {
         <div style={{ fontFamily: 'Inter-Regular', fontWeight: 'normal', fontStyle: 'normal'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
-                {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
+                <Suspense fallback={<Loading/>}>
+                  {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
+                </Suspense>
                 {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
             </div>
         </div>

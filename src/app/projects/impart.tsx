@@ -25,6 +25,15 @@ export default function Impart({ className, selectedProject, setSelectedProject,
     
     const [mapNumber, setMapNumber] = useState<number>(0);
 
+    // scroll to top on open
+    useEffect(() => {
+        // console.log('useeffect');
+        // if (selectedProject?.id == 'impart') {
+            // console.log('selectedProject is impart')
+            window.scrollTo(0, 0); 
+        // }
+    }, [selectedProject]);
+
     // switch empathy map
     const handleEmpathyMapClick = () => {
         if (mapNumber == 3) {
@@ -33,13 +42,6 @@ export default function Impart({ className, selectedProject, setSelectedProject,
             setMapNumber(mapNumber + 1);
         }
     };
-
-    // scroll to top on open
-    useEffect(() => {
-        if (selectedProject?.id == 'downballot') {
-            window.scrollTo(0, 0); 
-        }
-    }, [selectedProject]);
 
     // wiggle animation
     const wiggleControls = useAnimation();
@@ -383,12 +385,12 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`mb-8 mt-16 sm:mt-6 relative flex flex-col sm:flex-row ml-5`}>
                         <div className={`sm:transform sm:-rotate-90 sm:absolute top-32 md:top-26 left-[-28px] text-xs mb-4 sm:mb-0`}>Summary of Violations</div>
                         <div className={`w-12`}/>
-                        <img src={`/assets/impart/summary_of_violations.png`} className={`object-contain w-[80%] min-w-[350px] max-w-[500px]`}/>
+                        <img src={`/assets/impart/summary_of_violations.png`} className={`object-contain w-[80%] max-w-[500px]`}/>
                     </div>
                     <div className={`mb-8 mt-6 relative flex flex-col sm:flex-row ml-5`}>
                         <div className={`sm:transform sm:-rotate-90 sm:absolute top-24 md:top-26 left-[-28px] text-xs mb-4 sm:mb-0`}>Evaluation Statistics</div>
                         <div className={`w-12`}/>
-                        <img src={`/assets/impart/evaluation_statistics.png`} className={`object-contain w-[65%] min-w-[300px] max-w-[450px]`}/>
+                        <img src={`/assets/impart/evaluation_statistics.png`} className={`object-contain w-[65%] max-w-[450px]`}/>
                     </div>
                 </motion.div>
 
@@ -417,7 +419,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 </motion.div>
 
                 <motion.div 
-                    className={`h-full w-full mb-8 flex flex-col min-h-[700px]`} 
+                    className={`h-full w-full mb-8 flex flex-col min-h-[700px] py-60`} 
                     id="slide-10"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}

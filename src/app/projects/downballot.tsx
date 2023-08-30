@@ -28,9 +28,11 @@ export default function Downballot({ className, selectedProject, setSelectedProj
 
     // scroll to top on open
     useEffect(() => {
-        if (selectedProject?.id == 'impart') {
+        // console.log('useeffect');
+        // if (selectedProject?.id != 'downballot') {
+        //     console.log('selectedProject is downballot')
             window.scrollTo(0, 0); 
-        }
+        // }
     }, [selectedProject]);
 
     // wiggle animation

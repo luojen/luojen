@@ -22,9 +22,9 @@ export default function ScrollButton({ className }: ScrollButtonProps) {
     };
 
     return (
-        <motion.div className={`${className} ml-8 mb-8 text-white`}>
+        <motion.div className={`${className} text-white flex flex-col justify-center items-center w-20`}>
         {/* <motion.div className={`${className} absolute bottom-0 left-0 ml-8 mb-8 text-white`}> */}
-            <motion.p className={"pr-2 text-xs text-black mb-3"}>
+            <motion.p className={"text-xs text-black mb-3"}>
                 Scroll down
             </motion.p>
             <motion.div

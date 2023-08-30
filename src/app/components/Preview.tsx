@@ -36,8 +36,8 @@ export default function Preview({ className, projectData, selectedProject, setSe
     }, [projectData?.id]);
 
     return (
-            <motion.div className={`${className} px-8 pb-4`}>
-                {Project}
-            </motion.div>
+        <motion.div className={`${className} px-8 pb-4`}>
+            {Project}
+        </motion.div>
     );
 }

@@ -77,10 +77,9 @@ export default function Downballot({ className, selectedProject, setSelectedProj
     };
 
     return (
-        <div className={`${className} h-full w-full relative`}>            
+        <div className={`${className} h-[50%] md:h-full w-full relative`}>            
             <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData}/>
             <div className={`h-full w-full mb-8`}>
-                
                 <motion.div 
                     className={`h-full w-full min-h-[700px] flex flex-col mb-8`} 
                     id="slide-1"
@@ -92,13 +91,13 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     </div>
                     <div className={`w-full h-[2px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
-                        <ScrollButton/>
-                        <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain self-end -mr-8 md:-mr-12`} alt="Animated GIF demo for Downballot" />
+                        <ScrollButton className={`absolute xs:top-60 xs:left-0 sm:top-auto sm:bottom-10`}/>
+                        <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot" />
                     </div>
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-full min-h-[500px] w-full mb-8`} 
+                    className={`h-fit-content py-60 pb-56 w-full mb-8`} 
                     id="slide-2"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -142,7 +141,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-full w-full mb-8 min-h-[800px]`} 
+                    className={`h-fit-content w-full py-[25%] mb-8 min-h-[800px]`} 
                     id="slide-3"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -162,7 +161,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 flex flex-row py-6`} 
+                    className={`h-fit-content w-full mb-8 flex flex-col sm:flex-row py-60`} 
                     id="slide-4"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -170,7 +169,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`basis-1/3 text-xl lg:text-2xl text-right pl-8`}> How might we collect election data in a way that fosters greater depth and quality of election reporting? </div>
+                    <div className={`basis-1/3 text-xl lg:text-2xl sm:text-right sm:pl-8 xs:mb-4`}> How might we collect election data in a way that fosters greater depth and quality of election reporting? </div>
                     <div className={`w-[2px] h-80vh bg-black mt-2 mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8`}> 
                         <div className={`mb-2`}>
@@ -195,7 +194,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
 
                 <motion.div 
-                    className={`h-fit-content w-full flex flex-col space-y-3 pb-4 relative mb-8`} 
+                    className={`h-fit-content w-full flex flex-col space-y-3 pb-4 relative py-60 mb-36`} 
                     id="slide-5"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -278,7 +277,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 flex flex-col justify-center items-center px-8 py-8`} 
+                    className={`h-fit-content py-[25%] w-full mb-8 flex flex-col justify-center items-center px-8 py-8`} 
                     id="slide-6"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -293,7 +292,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 py-3 flex flex-col justify-center items-center`} 
+                    className={`h-fit-content py-60 w-full mb-8 py-3 flex flex-col justify-center items-center`} 
                     id="slide-7"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -301,24 +300,19 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`text-sm text-center px-24`}>For our collaboration with Bay City News, <strong>I made a few mockups</strong> of what our data visualizations might look like. </div>
-                    <div className={`flex flex-row space-x-10 pt-5 justify-center`}>
-                        <div className={`flex w-1/2 h-full justify-end items-center`}>
+                    <div className={`text-sm text-center sm:px-24`}>For our collaboration with Bay City News, <strong>I made a few mockups</strong> of what our data visualizations might look like. </div>
+                    <div className={`flex flex-col sm:flex-row sm:space-x-10 pt-10 justify-center`}>
+                        <div className={`flex w-full sm:w-1/2 h-full justify-center sm:justify-end items-center`}>
                             <img src="/assets/downballot/prototype_1_layout.png" className={`w-[70%] object-contain rounded-xl shadow-lg`}/>
                         </div>
-                        <div className={`w-1/2 flex flex-col justify-center`}>
-                            {/* <div
-                                className={`${pulsing ? "animate-pulse duration-1400 ease-in-out infinite" : ""} flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}
-                                style={{ width: "600px", background: "#ccc" }}
-                            > */}
+                        <div className={`w-full sm:w-1/2 flex flex-col justify-center items-center sm:items-start`}>
                             <motion.img 
                                 src={thumbnails[0]}
-                                className={``}
+                                className={`xs:mt-8 sm:mt-0 flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}
                                 animate={wiggleControls}
                                 onClick={() => handleThumbnailClick(0)}
                                 whileHover={{ scale: 1.1 }}
                             />
-                            {/* </div> */}
                             <motion.img 
                                 src={thumbnails[1]} 
                                 className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}
@@ -333,14 +327,12 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                 onClick={() => handleThumbnailClick(2)}
                                 whileHover={{ scale: 1.1 }}
                             />
-                            {/* <img src="/assets/downballot/prototype_1_extended_1.png" className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}/>
-                            <img src="/assets/downballot/prototype_1_data_1.png" className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8`}/> */}
                         </div>
                     </div>
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-full w-full min-h-[500px] mb-8 pl-24 flex flex-col relative`} 
+                    className={`h-fit-content py-60 w-full min-h-[500px] mb-8 md:pl-24 flex flex-col relative`} 
                     id="slide-8"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -348,7 +340,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`absolute top-12 left-0 text-base transform -rotate-90`}>User Persona</div>
+                    <div className={`text-base mb-3 md:absolute md:top-[280px] md:left-0 md:transform md:-rotate-90`}>User Persona</div>
                     <div>
                         <img src="/assets/downballot/bcn_logo.png" className={`object-contain w-[60px] block md:hidden mb-3`}/>
                         <div className={`flex flex-row`}>
@@ -363,13 +355,13 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         </div>
                         <div className={`w-full h-[2px] bg-black my-6`}/>
                         <div>
-                            <div className={`grid grid-cols-3 gap-6 gap-y-8 md:gap-8 text-xs md:text-sm`}>
-                                <div><strong>Intake systems are labor-intensive and clunky</strong>, involving manually updating templates for election night using plaintext, assigning reporters to cover different counties</div>
-                                <div><strong>Smaller news organizations prefer a templated content management system </strong>for producing content, using NewsPack Wordpress Platform</div>
-                                <div>Each news organization has its own intake system and <strong>reporters rely on systems they have used before</strong></div>
-                                <div>“The embeddable <strong>tool could be a great supplement </strong> for the roster of everything on the ballot”</div>
-                                <div>“Typically publish with updates 50-60 times per county... <strong>it’s very scattered.”</strong></div>
-                                <div><strong>Pre-election coverage is important</strong></div>
+                            <div className={`sm:grid sm:grid-cols-3 sm:gap-6 sm:gap-y-8 md:gap-8 text-xs md:text-sm`}>
+                                <div className={`xs:mb-3 sm:mb-auto`}><strong>Intake systems are labor-intensive and clunky</strong>, involving manually updating templates for election night using plaintext, assigning reporters to cover different counties</div>
+                                <div className={`xs:mb-3 sm:mb-auto`}><strong>Smaller news organizations prefer a templated content management system </strong>for producing content, using NewsPack Wordpress Platform</div>
+                                <div className={`xs:mb-3 sm:mb-auto`}>Each news organization has its own intake system and <strong>reporters rely on systems they have used before</strong></div>
+                                <div className={`xs:mb-3 sm:mb-auto`}>“The embeddable <strong>tool could be a great supplement </strong> for the roster of everything on the ballot”</div>
+                                <div className={`xs:mb-3 sm:mb-auto`}>“Typically publish with updates 50-60 times per county... <strong>it’s very scattered.”</strong></div>
+                                <div className={`xs:mb-3 sm:mb-auto`}><strong>Pre-election coverage is important</strong></div>
                             </div>
                         </div>
                         
@@ -395,7 +387,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 flex flex-row py-[50%]`} 
+                    className={`h-fit-content w-full mb-8 flex flex-col sm:flex-row py-60`} 
                     id="slide-10"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -403,7 +395,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`basis-1/3 text-xl lg:text-2xl text-right pl-8`}> How might we collect election data to supplement existing election reporting at the hyperlocal level? </div>
+                    <div className={`basis-1/3 text-xl lg:text-2xl text-left mb-6 sm:text-right md:pl-8`}> How might we collect election data to supplement existing election reporting at the hyperlocal level? </div>
                     <div className={`w-[2px] h-25vh bg-black mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8 max-w-[500px]`}> 
                         <div className={`mb-2`}>
@@ -415,7 +407,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 py-6 flex flex-row justify-end`} 
+                    className={`h-fit-content w-full mb-8 py-[30%] flex flex-col sm:flex-row items-center sm:justify-end`} 
                     id="slide-11"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -424,18 +416,19 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                         <div className={`basis-1/3`}/>
-                        <div className={`basis-1/3 px-8 pt-8`}>
-                            <img src="/assets/downballot/prototype_2_simple_embed_3.png" className={`object-contain rounded-xl shadow-lg`}/>
-                            <div className={`text-xs md:text-sm text-right mt-10 xs:w-[200px]`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
+                        <div className={`flex flex-col basis-1/3 sm:px-8 pt-8`}>
+                            <div className={`text-xs md:text-sm text-center mb-10 block sm:hidden`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
+                            <img src="/assets/downballot/prototype_2_simple_embed_3.png" className={`self-center sm:self-end object-contain rounded-xl shadow-lg flex-none max-w-[300px]`}/>
+                            <div className={`text-xs md:text-sm text-right mt-10 hidden sm:block`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
                         </div>
-                        <div className={`flex flex-col basis-1/3 pr-8 pt-8`}>
-                            <img src="/assets/downballot/prototype_2_simple_embed_2.png" className={`object-contain rounded-xl shadow-lg`}/>
-                            <img src="/assets/downballot/prototype_2_simple_embed_1.png" className={`object-contain rounded-xl shadow-lg mt-8`}/>
+                        <div className={`flex flex-col basis-1/3 sm:pr-8 pt-8`}>
+                            <img src="/assets/downballot/prototype_2_simple_embed_2.png" className={`flex-none object-contain rounded-xl shadow-lg max-w-[300px]`}/>
+                            <img src="/assets/downballot/prototype_2_simple_embed_1.png" className={`flex-none object-contain rounded-xl shadow-lg mt-8 max-w-[300px]`}/>
                         </div>
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 py-8 flex flex-col sm:flex-row justify-start items-center sm:items-start`} 
+                    className={`h-fit-content w-full mb-20 py-60 flex flex-col sm:flex-row justify-start items-center sm:items-start`} 
                     id="slide-12"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -443,13 +436,13 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`w-1/2 flex flex-row justify-start relative`}>
-                        <div className={`absolute top-16 left-[-2px] text-sm md:text-base transform -rotate-90`}>Original design</div>
-                        <img src="/assets/downballot/customize_before.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain ml-16`}/>
+                    <div className={`w-1/2 flex flex-col sm:flex-row justify-start relative mb-10`}>
+                        <div className={`mb-4 sm:mb-0 sm:absolute sm:top-10 sm:left-[-2px] text-sm md:text-base sm:transform sm:-rotate-90`}>Original design</div>
+                        <img src="/assets/downballot/customize_before.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
                     </div>
-                    <div className={`w-1/2 flex flex-row justify-start relative`}>
-                    <div className={`absolute top-16 left-[-2px] text-sm md:text-base transform -rotate-90`}>Revised design</div>
-                        <img src="/assets/downballot/customize_after.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain ml-16`}/>
+                    <div className={`w-1/2 flex flex-col sm:flex-row justify-start relative`}>
+                    <div className={`mb-4 sm:mb-0 sm:absolute sm:top-10 sm:left-[-2px] text-sm md:text-base sm:transform sm:-rotate-90`}>Revised design</div>
+                        <img src="/assets/downballot/customize_after.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
                     </div>
                 </motion.div>
                
@@ -464,14 +457,14 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 >
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 03. Build </div>
                     <div className={`w-full pr-3 pb-3 text-sm`}>Using Scrapy, Postgres, Google Cloud Platform, React, and Python, I built our API. </div>
-                    <div className={`h-full flex flex-col justify-start items-center`}>
-                        <img src="/assets/downballot/final_prototype.gif" className={`w-[90%] max-w-[900px] h-auto object-contain -mr-8 md:-mr-12`} alt="Animated GIF demo for Downballot" />
-                        <img src="/assets/downballot/create_prototype.gif" className={`flex-grow object-contain w-[70%] rounded-xl shadow-lg mb-8 mt-10 ml-10`}/>
+                    <div className={`h-full flex flex-col justify-start items-center lg:items-start`}>
+                        <img src="/assets/downballot/final_prototype.gif" className={`w-[90%] max-w-[800px] h-auto object-contain -mr-8 md:-mr-12`} alt="Animated GIF demo for Downballot" />
+                        <img src="/assets/downballot/create_prototype.gif" className={`flex-grow object-contain w-[70%] max-w-[800px] rounded-xl shadow-lg mb-8 mt-10 ml-10`}/>
                     </div>
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-full w-full mb-8 flex flex-col min-h-[700px]`} 
+                    className={`h-fit-content w-full mb-8 flex flex-col min-h-[700px] py-60`} 
                     id="slide-14"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}

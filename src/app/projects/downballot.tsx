@@ -170,6 +170,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`basis-1/3 text-xl lg:text-2xl sm:text-right sm:pl-8 xs:mb-4`}> How might we collect election data in a way that fosters greater depth and quality of election reporting? </div>
+                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden`}/>
                     <div className={`w-[2px] h-80vh bg-black mt-2 mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8`}> 
                         <div className={`mb-2`}>
@@ -369,7 +370,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 </motion.div>
 
                 <motion.div 
-                    className={`h-full w-full mb-8 px-24 md:px-56 min-h-[400px] flex flex-col justify-center items-center`} 
+                    className={`h-full w-full mb-8 px-12 sm:px-24 md:px-56 min-h-[400px] flex flex-col justify-center items-center`} 
                     id="slide-9"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -395,7 +396,8 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`basis-1/3 text-xl lg:text-2xl text-left mb-6 sm:text-right md:pl-8`}> How might we collect election data to supplement existing election reporting at the hyperlocal level? </div>
+                    <div className={`basis-1/3 text-xl lg:text-2xl text-left mb-6 sm:text-right md:pl-8 xs:mb-4`}> How might we collect election data to supplement existing election reporting at the hyperlocal level? </div>
+                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden mb-4`}/>
                     <div className={`w-[2px] h-25vh bg-black mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8 max-w-[500px]`}> 
                         <div className={`mb-2`}>

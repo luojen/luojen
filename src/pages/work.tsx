@@ -31,7 +31,7 @@ export default function Work() {
   }
 
   useEffect(() => {
-    if (data.length > 0) {
+    // if (data.length > 0) {
       const display_data: Data = [];
       let found_selected_project: boolean = false;
       data.map(project => {
@@ -45,11 +45,12 @@ export default function Work() {
         setSelectedProject(display_data[0]);
       }
       setDisplay(display_data);
-    }
+    // }
   }, [selectedTag]);
 
   useEffect(() => {
-    if (data.length > 0) getTags();
+    // if (data.length > 0) getTags();
+    getTags();
   }, [data]);
 
   useEffect(() => {
@@ -75,9 +76,9 @@ export default function Work() {
                 <Suspense fallback={<TagsLoading/>}>
                   <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
                 </Suspense>
-                {/* <Suspense fallback={<RowsLoading/>}>
+                <Suspense fallback={<RowsLoading/>}>
                   <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
-                </Suspense> */}
+                </Suspense>
                 {/* {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>} */}
                 {/* {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null} */}
             </div>
@@ -96,6 +97,6 @@ function TagsLoading() {
 
 function RowsLoading() {
   return (
-    <div className={`w-full h-5 md:h-10 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md`}/>
+    <div className={`w-full h-16 md:h-64 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md`}/>
   );
 }

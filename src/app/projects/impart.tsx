@@ -100,13 +100,13 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         
                     </div>
                     <div className={`w-[300px] h-[2px] bg-black my-4`}/>
-                    <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain absolute right-[-25%] lg:right-[-15%] top-[200px] hidden sm:block`} alt="Animated GIF demo for Downballot" />
-                    <ScrollButton/>
-                        <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain block sm:hidden mb-[200px] ml-[-150px]`} alt="Animated GIF demo for Downballot" />
+                    <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain absolute sm:right-[-25%] lg:right-[-15%] sm:top-[200px] hidden sm:block`} alt="Animated GIF demo for Downballot" />
+                    <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
+                    <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain block sm:hidden ml-[-100px]`} alt="Animated GIF demo for Downballot" />
                 </motion.div>
                 
                 <motion.div 
-                    className={`h-full min-h-[800px] sm:min-h-[500px] w-full mb-8 py-[25%]`} 
+                    className={`h-fit-content min-h-[800px] sm:min-h-[500px] w-full mb-8 py-[30%]`} 
                     id="slide-2"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -115,12 +115,13 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 01. Context </div>
-                    <div className={`flex flex-row h-[70%] mt-10 justify-center`}>
-                        <div className={`basis-1/4 text-xl lg:text-2xl text-right pl-8`}> How might we make collaboration between artists feel more like play than work? </div>
-                        <div className={`flex-none w-[2px] h-full bg-black mt-2 mx-8`}/>
-                        <div className={`flex flex-row space-x-8 pr-16`}>
-                            <div className={`basis-1/2 text-sm mt-1`}><strong>Artistic collaboration builds meaningful connections </strong> and opens up opportunities for discovering new ways of creating. The initial first step toward <strong>building a network of collaborators and receiving feedback, however, is greatly inhibited by social risk and time to receive feedback.</strong></div>
-                            <div className={`basis-1/2 text-sm mt-1`}>COVID-19 limited opportunities for collaboration by reducing the chance social encounters that might yield potential collaborators.</div>
+                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden`}/>
+                    <div className={`flex flex-col sm:flex-row h-[70%] mt-4 sm:mt-10 justify-center`}>
+                        <div className={`basis-1/4 text-xl lg:text-2xl sm:text-right sm:pl-8`}> How might we make collaboration between artists feel more like play than work? </div>
+                        <div className={`flex-none w-[2px] h-full bg-black mt-2 mx-8 hidden sm:block`}/>
+                        <div className={`flex flex-col sm:flex-row sm:space-x-8 pr-16`}>
+                            <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}><strong>Artistic collaboration builds meaningful connections </strong> and opens up opportunities for discovering new ways of creating. The initial first step toward <strong>building a network of collaborators and receiving feedback, however, is greatly inhibited by social risk and time to receive feedback.</strong></div>
+                            <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}>COVID-19 limited opportunities for collaboration by reducing the chance social encounters that might yield potential collaborators.</div>
                         </div>
                     </div>
                 </motion.div>
@@ -139,7 +140,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`w-full text-sm mt-1`}><strong>We interviewed five artists</strong> on their experiences collaborating with one another during the pandemic and created the following empathy maps. </div>
                     <motion.img 
                         src={`/assets/impart/empathy_map_${mapNumber}.png`} 
-                        className={`object-contain h-[90%] rounded-xl border border-[#000000] border-opacity-20 mb-8 mt-6`}
+                        className={`object-contain w-[90%] max-w-[900px] rounded-xl border border-[#000000] border-opacity-20 mb-8 mt-6 `}
                         animate={wiggleControls}
                         onClick={handleEmpathyMapClick}
                         whileHover={{ scale: 1.01 }}
@@ -155,8 +156,37 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <div className={`text-base lg:text-lg self-start`}> User personas </div>
-                    <div className={`grid grid-cols-2 gap-x-10 mb-10 mt-6`}>
+                    <div className={`text-base lg:text-lg self-start mb-4 sm:mb-0`}> User personas </div>
+                    <div className={`flex flex-col block sm:hidden`}>
+                        <div className={`flex flex-row`}> 
+                            <div className={`flex flex-row justify-center flex-none max-h-[90px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
+                                <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
+                            </div>
+                            <div className={`flex flex-col`}>
+                                <div>Veronica</div>
+                                <div className={`text-xs`}>Printmaker, video game designer, and art teacher </div>
+                            </div>
+                        </div>
+                        <div className={`flex flex-row mt-4`}>
+                            <div className={`flex-none w-[2px] h-[full] bg-black`}/>
+                            <div className={`text-xs ml-4`}>Veronica expressed feeling disappointed when collaborators dropped off from projects, disliking the rigid, structured nature of collaboration, and how difficult it was to determine how artists act in collaboration.</div>
+                        </div>
+                        <div className={`flex flex-row mt-10`}> 
+                            <div className={`flex flex-row justify-center flex-none max-h-[90px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
+                                <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
+                            </div>
+                            <div className={`flex flex-col`}>
+                                <div>Makena</div>
+                                <div className={`text-xs`}>Visual artist, art major at UCSB</div>
+                            </div>
+                        </div>
+                        <div className={`flex flex-row mt-4 mb-10`}>
+                            <div className={`flex-none w-[2px] h-[full] bg-black`}/>
+                            <div className={`text-xs ml-4`}>Makena expressed feeling shy about sharing her own art, and feeling more connected to other artists by their work itself rather than their specific identities.</div>
+                        </div>
+                    </div>
+
+                    <div className={`hidden sm:grid grid-cols-2 gap-x-10 mb-10 mt-6`}>
                         <div className={`flex flex-row`}> 
                             <div className={`flex flex-row justify-center flex-none max-h-[90px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
                                 <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
@@ -192,7 +222,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 </motion.div>
 
                 <motion.div 
-                    className={`h-fit-content min-h-[1600px] lg:min-h-[1500px] w-full mb-8`} 
+                    className={`h-fit-content min-h-[1600px] lg:min-h-[1500px] w-full mb-8 py-32`} 
                     id="slide-5"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -203,8 +233,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 03. Prototype </div>
                     <div className={`text-lg lg:text-xl`}> Experience prototyping </div>
                     <div className={`w-full text-sm mt-4`}>We came up with some initial solutions.</div>
-                    <div className={`flex flex-row mt-7`}>
-                        <img className={`h-full mr-6`} src={`/assets/impart/1_icon.png`}/>
+                    <div className={`flex flex-col sm:flex-row mt-7`}>
+                        <img className={`w-[30px] sm:w-auto sm:h-full mb-5 sm:mb-0 mr-6`} src={`/assets/impart/1_icon.png`}/>
                         <div>
                             <div className={`max-w-[400px] lg:max-w-[600px]`}>
                                 <div className={`text-sm mb-5 md:mb-2`}><strong>Idea:</strong> Create a social media platform solely dedicated to allowing anonymous artists to connect and grow a following.</div>
@@ -213,17 +243,17 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                             </div>
                             <div className={`flex flex-row space-x-6`}>
                                 <div className={`basis-1/2`}>
-                                    <img className={`w-full max-w-[500px]`} src={`/assets/impart/experience_prototype_1.png`}/>
+                                    <img className={`w-full max-w-[400px]`} src={`/assets/impart/experience_prototype_1.png`}/>
                                     <div className={`text-sm mt-6 text-black text-opacity-50 max-w-[500px]`}>Participants noted that the process of making was inspired, and expressed wanting to know more about the artists’ work they used to create their own. </div>
                                 </div>
                                 <div className={`basis-1/2 `}>
-                                    <img className={`w-full max-w-[500px]`} src={`/assets/impart/experience_prototype_2.png`}/>
+                                    <img className={`w-full max-w-[400px]`} src={`/assets/impart/experience_prototype_2.png`}/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className={`flex flex-row mt-20`}>
-                        <img className={`h-full mr-6`} src={`/assets/impart/2_icon.png`}/>
+                    <div className={`flex flex-col sm:flex-row mt-20`}>
+                    <img className={`w-[30px] sm:w-auto sm:h-full mb-5 sm:mb-0 mr-6`} src={`/assets/impart/2_icon.png`}/>
                         <div>
                             <div className={`max-w-[400px] lg:max-w-[600px]`}>
                                 <div className={`text-sm mb-5 md:mb-2`}><strong>Idea: </strong>Create a collaboration platform that transforms collaboration into a game, allowing artists to piecemeal feedback by playing on one another's ideas.</div>
@@ -249,16 +279,16 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 >
                     <div className={`text-lg lg:text-xl`}> Low fidelity to high fidelity prototyping </div>
                     <div className={`w-full text-sm mt-4`}><strong>Our prototypes sought to accomplish three primary tasks.</strong></div>
-                    <div className={`flex flex-row space-x-6 max-w-[900px] mt-10`}>
-                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl`}>
+                    <div className={`flex flex-col sm:flex-row sm:space-x-6 max-w-[900px] mt-10`}>
+                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl mb-5 sm:mb-0`}>
                             <div className={`text-sm text-center`}>Simple</div>
                             <div className={`text-xs text-center`}>Browse art from other users to gain inspiration.</div>
                         </div>
-                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl`}>
+                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl mb-5 sm:mb-0`}>
                             <div className={`text-sm text-center`}>Moderate</div>
                             <div className={`text-xs text-center`}>Upload a creatio­­­n of your own inspired by something you have seen by other users.</div>
                         </div>
-                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl`}>
+                        <div className={`basis-1/3 border border-black p-5 md:p-10 rounded-xl mb-5 sm:mb-0`}>
                             <div className={`text-sm text-center`}>Complex</div>
                             <div className={`text-xs text-center`}>Join a collaboration group with other users.</div>
                         </div>
@@ -275,73 +305,72 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`w-full text-sm`}>Once we finalized a product direction, we moved on toward building our prototypes, beginning with <strong>a few low fidelity prototypes.</strong></div>
-                    <div className={`flex flex-row relative mt-10`}>
-                        <div className={`transform -rotate-90 absolute top-6 left-[-2px] text-xs`}>Simple</div>
+                    <div className={`flex flex-col sm:flex-row relative mt-10`}>
+                        <div className={`sm:transform sm:-rotate-90 sm:absolute top-6 left-[-2px] sm:text-xs mb-5 sm:mb-0`}>Simple</div>
                         <div className={`w-48 sm:w-36 md:w-32 lg:w-36 xl:w-24`}></div>
-                        <div className={`max-w-[1000px] flex flex-row space-x-6 p-6 md:p-10 bg-[#5B5B5B] bg-opacity-[5%] rounded-xl`}>
-                            <div className={`basis-1/4 flex flex-col`}> 
+                        <div className={`grid grid-cols-4 gap-x-3 sm:gap-x-10 max-w-[1000px] bg-[#5B5B5B] bg-opacity-[5%] rounded-xl p-6 md:p-10`}>
+                            <div className={`flex flex-col`}> 
                                 <img className={`w-full mr-6`} src={`/assets/impart/simple_1.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Image is clicked</div>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Image is clicked</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
+                            <div className={`flex flex-col`}> 
                                 <img className={`w-full mr-6`} src={`/assets/impart/simple_2.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Opens to thread with related images</div>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Open to thread with related images</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
+                            <div className={`flex flex-col`}> 
                                 <img className={`w-full mr-6`} src={`/assets/impart/simple_3.png`}/>
-                                <div className={`text-xs text-center mt-4`}>View information about image</div>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>View information about image</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
+                            <div className={`flex flex-col`}> 
                                 <img className={`w-full mr-6`} src={`/assets/impart/simple_4.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Bookmark image</div>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Bookmark image</div>
                             </div>
                         </div>
                     </div>
-                    <div className={`flex flex-row relative mt-10`}>
-                    <div className={`transform -rotate-90 absolute top-10 left-[-2px] text-xs`}>Moderate</div>
+                    <div className={`flex flex-col sm:flex-row relative mt-10`}>
+                        <div className={`sm:transform sm:-rotate-90 sm:absolute top-10 left-[-2px] sm:text-xs mb-5 sm:mb-0`}>Moderate</div>
                         <div className={`w-48 sm:w-36 md:w-32 lg:w-36 xl:w-24`}></div>
-                        <div className={`max-w-[1000px] flex flex-row space-x-6 p-6 md:p-10 bg-[#5B5B5B] bg-opacity-[5%] rounded-xl`}>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/moderate_1.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Tap create button</div>
+                        <div className={`grid grid-cols-4 gap-x-3 sm:gap-x-10 max-w-[1000px] bg-[#5B5B5B] bg-opacity-[5%] rounded-xl p-6 md:p-10`}>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/moderate_1.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Tap create button</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/moderate_2.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Upload work</div>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/moderate_2.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Upload work</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/moderate_3.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Add image details</div>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/moderate_3.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Add image details</div>
                             </div>
-                            <div className={`basis-1/4`}/> 
                         </div>
                     </div>
-                    <div className={`flex flex-row relative mt-10`}>
-                        <div className={`transform -rotate-90 absolute top-8 left-[-2px] text-xs`}>Complex</div>
-                        <div className={`w-56 sm:w-48 md:w-36 lg:w-36 xl:w-24`}></div>
-                        <div className={`max-w-[1000px] flex flex-row space-x-6 p-6 md:p-10 bg-[#5B5B5B] bg-opacity-[5%] rounded-xl`}>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/complex_1.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Tap notifications to view all notifications</div>
+                    <div className={`flex flex-col sm:flex-row relative mt-10`}>
+                        <div className={`sm:transform sm:-rotate-90 sm:absolute top-6 left-[-2px] sm:text-xs mb-5 sm:mb-0`}>Complex</div>
+                        <div className={`w-48 sm:w-36 md:w-32 lg:w-36 xl:w-24`}></div>
+                        <div className={`grid grid-cols-4 gap-x-3 sm:gap-x-10 max-w-[1000px] bg-[#5B5B5B] bg-opacity-[5%] rounded-xl p-6 md:p-10`}>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/complex_1.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>View all notifications</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/complex_2.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Tap on a single notification</div>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/complex_2.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Tap a single notification</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/complex_3.png`}/>
-                                <div className={`text-xs text-center mt-4`}>View a user’s profile</div>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/complex_3.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>View a user's profile</div>
                             </div>
-                            <div className={`basis-1/4 flex flex-col`}> 
-                                <img className={`w-full`} src={`/assets/impart/complex_4.png`}/>
-                                <div className={`text-xs text-center mt-4`}>Create collaboration group</div>
+                            <div className={`flex flex-col`}> 
+                                <img className={`w-full mr-6`} src={`/assets/impart/complex_4.png`}/>
+                                <div className={`text-[10px] sm:text-xs text-center mt-4`}>Start collaboration group</div>
                             </div>
                         </div>
                     </div>
                 </motion.div>
 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 pb-12`} 
+                    className={`h-fit-content w-full mb-8 pb-12 py-60`} 
                     id="slide-8"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -351,20 +380,20 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 >
                     <div className={`w-full text-sm`}>We used heuristic evaluations with 4 different users at each step to improve our prototypes.</div>
                     <div className={`w-full text-sm mt-4`}>We used <strong>Nielsen Norman's usability heuristics</strong> to carry out our analysis: visiblity of system status, match between system and world, user control and freedom, consiste­ncy and standards, error prevention, recognition not recall, flexibility and efficiency of use, aesthetic and minimalist design, help users with errors, help and documentation, accessibility, fairness and inclusion, and value alignment.</div>
-                    <div className={`mb-8 mt-6 relative flex flex-row ml-5`}>
-                        <div className={`transform -rotate-90 absolute top-32 md:top-26 left-[-28px] text-xs`}>Summary of Violations</div>
+                    <div className={`mb-8 mt-16 sm:mt-6 relative flex flex-col sm:flex-row ml-5`}>
+                        <div className={`sm:transform sm:-rotate-90 sm:absolute top-32 md:top-26 left-[-28px] text-xs mb-4 sm:mb-0`}>Summary of Violations</div>
                         <div className={`w-12`}/>
                         <img src={`/assets/impart/summary_of_violations.png`} className={`object-contain w-[80%] min-w-[350px] max-w-[500px]`}/>
                     </div>
-                    <div className={`mb-8 mt-6 relative flex flex-row ml-5`}>
-                        <div className={`transform -rotate-90 absolute top-20 md:top-28 left-[-28px] text-xs`}>Evaluation Statistics</div>
+                    <div className={`mb-8 mt-6 relative flex flex-col sm:flex-row ml-5`}>
+                        <div className={`sm:transform sm:-rotate-90 sm:absolute top-24 md:top-26 left-[-28px] text-xs mb-4 sm:mb-0`}>Evaluation Statistics</div>
                         <div className={`w-12`}/>
                         <img src={`/assets/impart/evaluation_statistics.png`} className={`object-contain w-[65%] min-w-[300px] max-w-[450px]`}/>
                     </div>
                 </motion.div>
 
                 <motion.div 
-                    className={`h-fit-content w-full mb-8 pb-12 py-10`} 
+                    className={`h-fit-content w-full mb-8 pb-12 py-60`} 
                     id="slide-9"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -373,7 +402,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`w-full text-sm`}><strong>Our final prototype</strong> was built using React Native.</div>
-                    <div className={`grid grid-cols-4 gap-x-10 mb-10 mt-6`}>
+                    <div className={`grid grid-cols-4 gap-x-3 sm:gap-x-10 mb-10 mt-6`}>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_1.png`}/>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_2.png`}/>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_3.png`}/>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     motion,
     useScroll,
@@ -24,14 +25,6 @@ type DownBallotProps = {
 export default function Downballot({ className, selectedProject, setSelectedProject, projectData }: DownBallotProps) {
 
     const [thumbnails, setThumbnails] = useState<string[]>(["/assets/downballot/prototype_1_updates_1.png", "/assets/downballot/prototype_1_extended_1.png", "/assets/downballot/prototype_1_data_1.png"]);
-    
-    // image loading graphics
-    const [imageLoading, setImageLoading] = useState(true);
-    const [pulsing, setPulsing] = useState(true);
-    const imageLoaded = () => {
-        setImageLoading(false);
-        setTimeout(() => setPulsing(false), 600);
-    };
 
     // scroll to top on open
     useEffect(() => {
@@ -91,7 +84,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     </div>
                     <div className={`w-full h-[2px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
-                        <ScrollButton className={`absolute xs:top-60 xs:left-0 sm:top-auto sm:bottom-10`}/>
+                        <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
                         <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot" />
                     </div>
                 </motion.div>

@@ -8,6 +8,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png"/>
+        <title>Jen Luo</title>
       </Head>
       <body>
         <Main />

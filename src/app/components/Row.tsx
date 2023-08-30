@@ -38,7 +38,7 @@ export default function Row({ className, project, selectedProject, setSelectedPr
         } else if (project?.id == "impart") {
             setColor('bg-yellow-400');
         }
-    }, [project?.color]);
+    }, [project?.color, project?.id]);
 
     useEffect(() => {
         if (project?.tags) {

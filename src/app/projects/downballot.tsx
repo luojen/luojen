@@ -88,7 +88,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`w-full h-[1px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        <Image src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] min-h-[200px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot"/>
+                        <Image src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] min-h-[200px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[600px] h-[200px] md:h-[300px] object-contain absolute xs:left-10 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot"/>
                     </div>
                 </motion.div>
                 
@@ -153,7 +153,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}><strong>For local newsrooms, collecting, cleaning, and reporting this data takes time and manpower in a time when newsrooms, increasingly understaffed and under-resourced, don't have much of either to spare.</strong></div>
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}>The effect? <strong>Small newsrooms must limit the scope of their coverage</strong> to a few primary districts <strong>at the cost of covering “down ballot” races in smaller municipalities—races that include voting for school boards, referenda, and funding for social services, agenda items that impact voters most.</strong></div>
                     </div>
-                    <Image src="/assets/downballot/site_structures.gif" className={`object-contain w-[50%] rounded-xl shadow-lg mb-8 mt-10`} alt="GIF documenting various election site structures"/>
+                    <Image src="/assets/downballot/site_structures.gif" className={`object-contain w-[50%] rounded-xl shadow-lg mb-8 mt-10`} alt="GIF documenting various election site structures" placeholder={`object-contain w-[50%] min-h-[200px] rounded-xl shadow-lg mb-8 mt-10`}/>
                 </motion.div>
 
                 <motion.div 

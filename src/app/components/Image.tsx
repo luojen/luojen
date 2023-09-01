@@ -13,10 +13,11 @@ import { Data, Project } from '@/app/types/Data';
 type ImageProps = {
     src?: string,
     className?: string, 
-    alt?: string
+    alt?: string,
+    placeholder?:string
 }
 
-export default function Image({ className, src, alt }: ImageProps) {
+export default function Image({ className, src, alt, placeholder }: ImageProps) {
   const [loaded, setLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -30,7 +31,7 @@ export default function Image({ className, src, alt }: ImageProps) {
   return (
     <>
         <img src={src} className={className} onLoad={handleImageLoad} onError={handleImageError} alt={alt}/>
-        {!loaded && <div className={`${className} h-5 md:h-10 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>}
+        {!loaded && <div className={`${placeholder} min-h-[5px] bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>}
     </>
   );
 }

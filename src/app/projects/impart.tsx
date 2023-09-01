@@ -102,9 +102,9 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         
                     </div>
                     <div className={`w-[300px] h-[1px] bg-black my-4`}/>
-                    <Image src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain absolute sm:right-[-25%] lg:right-[-15%] sm:top-[200px] hidden sm:block`} alt="Animated GIF demo for Impart"/>
+                    <Image src="/assets/impart/final_prototype.gif" className={`w-[150px] h-auto object-contain absolute left-0 sm:top-[250px] block sm:hidden`} placeholder={`w-[150px] h-[350px] object-contain absolute left-0 sm:top-[250px] block sm:hidden`} alt="Animated GIF demo for Impart"/>
                     <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                    <Image src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain block sm:hidden ml-[-100px]`} alt="Animated GIF demo for Impart"/>
+                    <Image src="/assets/impart/final_prototype.gif" className={`sm:w-[200px] h-auto object-contain absolute left-96 sm:top-[200px] hidden sm:block`} alt="Animated GIF demo for Impart" placeholder={`sm:w-[200px] h-[400px] object-contain absolute left-96 sm:top-[200px] hidden sm:block`}/>
                 </motion.div>
                 
                 <motion.div 

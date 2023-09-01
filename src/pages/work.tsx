@@ -73,8 +73,8 @@ export default function Work() {
         <div style={{ fontFamily: 'Inter-Regular', fontWeight: 'normal', fontStyle: 'normal'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
-                {tags ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
-                {data ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : null}
+                {tags.length > 0 ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>}
+                {data.length > 0 ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <RowsLoading/>}
             </div>
         </div>
       </div>
@@ -85,12 +85,12 @@ export default function Work() {
 
 function TagsLoading() {
   return (
-    <div className={`w-full h-5 md:h-10 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md`}/>
+    <div className={`w-full h-5 md:h-10 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>
   );
 }
 
 function RowsLoading() {
   return (
-    <div className={`w-full h-16 md:h-64 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md`}/>
+    <div className={`w-full h-16 md:h-64 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mt-3`}/>
   );
 }

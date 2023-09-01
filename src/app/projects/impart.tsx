@@ -68,9 +68,9 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         <span className={`mr-2`}>Less talking and more making—fostering creative collaboration between artists.</span>
                         <span className={`text-base lg:text-s whitespace-nowrap`}>(January ‘21-March '21)</span>
                     </div>
-                    <div className={`w-full h-[2px] bg-black`}/>
+                    <div className={`w-full h-[1px] bg-black`}/>
                     <div className={`w-[300px] text-sm mt-4`}>In a design sprint with three other Stanford students for Stanford's foundational human-computer interaction course, we designed a mobile platform for artists to give and take inspiration.</div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <div className={`flex flex-row w-[300px] text-sm`}>
                         <div className={`flex-1 whitespace-nowrap`}>
                             <div className={`w-1/2 text-[#595959]`}>Role</div>
@@ -82,7 +82,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                             <div className={`w-1/2`}>10 weeks</div>
                         </div>
                     </div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <div className={`flex flex-row w-[300px] text-sm whitespace-nowrap`}>
                         <div className={`flex-1 whitespace-nowrap`}>
                             <div className={`w-1/2 text-[#595959]`}>Tools</div>
@@ -100,7 +100,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         </div>
                         
                     </div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain absolute sm:right-[-25%] lg:right-[-15%] sm:top-[200px] hidden sm:block`} alt="Animated GIF demo for Downballot" />
                     <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
                     <img src="/assets/impart/final_prototype.gif" className={`w-[700px] md:w-[900px] h-auto object-contain block sm:hidden ml-[-100px]`} alt="Animated GIF demo for Downballot" />
@@ -118,8 +118,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 01. Context </div>
                     <div className={`flex flex-col sm:flex-row h-[70%] mt-4 sm:mt-10 justify-center`}>
                         <div className={`basis-1/4 text-xl lg:text-2xl sm:text-right sm:pl-8`}> How might we make collaboration between artists feel more like play than work? </div>
-                        <div className={`w-full h-[2px] bg-black flex-none block sm:hidden my-4`}/>
-                        <div className={`w-[2px] h-80vh bg-black flex-none hidden sm:block mx-10`}/>
+                        <div className={`w-full h-[1px] bg-black flex-none block sm:hidden my-4`}/>
+                        <div className={`w-[1px] h-80vh bg-black flex-none hidden sm:block mx-10`}/>
                         <div className={`flex flex-col sm:flex-row sm:space-x-8 pr-16`}>
                             <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}><strong>Artistic collaboration builds meaningful connections </strong> and opens up opportunities for discovering new ways of creating. The initial first step toward <strong>building a network of collaborators and receiving feedback, however, is greatly inhibited by social risk and time to receive feedback.</strong></div>
                             <div className={`basis-1/2 text-sm mt-4 sm:mt-1`}>COVID-19 limited opportunities for collaboration by reducing the chance social encounters that might yield potential collaborators.</div>
@@ -169,7 +169,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                             </div>
                         </div>
                         <div className={`flex flex-row mt-4`}>
-                            <div className={`flex-none w-[2px] h-[full] bg-black`}/>
+                            <div className={`flex-none w-[2px] h-[full] bg-black rounded-xl`}/>
                             <div className={`text-xs ml-4`}>Veronica expressed feeling disappointed when collaborators dropped off from projects, disliking the rigid, structured nature of collaboration, and how difficult it was to determine how artists act in collaboration.</div>
                         </div>
                         <div className={`flex flex-row mt-10`}> 
@@ -182,7 +182,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                             </div>
                         </div>
                         <div className={`flex flex-row mt-4 mb-10`}>
-                            <div className={`flex-none w-[2px] h-[full] bg-black`}/>
+                            <div className={`flex-none w-[2px] h-[full] bg-black rounded-xl`}/>
                             <div className={`text-xs ml-4`}>Makena expressed feeling shy about sharing her own art, and feeling more connected to other artists by their work itself rather than their specific identities.</div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                             </div>
                         </div>
                     </div>
-                    <div className={`w-full h-[2px] bg-black mt-48`}/>
+                    <div className={`w-full h-[1px] bg-black mt-48`}/>
                     <div className={`text-lg lg:text-xl mt-4`}> Note</div>
                     <div className={`w-full text-sm mt-4`}>We had began our project assuming that collaboration was important for artists, with collaboration encompassing writing, visual art, and music. In user interviews after experience prototyping, we found that <strong>participants had difficulty what type of medium</strong> they should collaborate with. It became clear that <strong>defining the specific domain in which collaboration would take place was an important question</strong> that would shape how we thought about creative community, authenticity, and feedback. <strong>We decided to move forward with visual art being the primary site of collaboration.</strong></div>
                 </motion.div>
@@ -440,7 +440,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 </ul>
                             </div>
                         </div>
-                        <div className={`w-[2px] h-100vh bg-black mt-2 mx-8`}/>
+                        <div className={`w-[1px] h-100vh bg-black mt-2 mx-8`}/>
                         <div className={`basis-1/2`}>
                             <div className={`text-lg lg:text-xl`}> Learning </div>
                             <div className={`w-full text-sm mt-4`}><strong>Narrowing down the specific user we sought to help was important</strong> to establish early-on in the needfinding process.

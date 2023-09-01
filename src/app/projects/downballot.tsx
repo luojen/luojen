@@ -85,7 +85,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <span className={`mr-2`}>Building a tool to produce high-quality, customizable data visualizations for hyper-local races on election night. </span>
                         <span className={`text-base lg:text-s whitespace-nowrap`}>(August ‘22-July ‘23)</span>
                     </div>
-                    <div className={`w-full h-[2px] bg-black flex-none`}/>
+                    <div className={`w-full h-[1px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
                         <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot" />
@@ -103,7 +103,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 >
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 00. Overview </div>
                     <div className={`w-[300px] text-sm`}>I led the design and development of a suite of tools for election reporting, in partnership with the Brown Center for Media Innovation, Big Local News, and partner newsrooms in the San Francisco Bay Area. </div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <div className={`flex flex-row w-[300px] text-sm`}>
                         <div className={`flex-1 whitespace-nowrap`}>
                             <div className={`w-1/2 text-[#595959]`}>Role</div>
@@ -115,7 +115,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                             <div className={`w-1/2`}>11 months</div>
                         </div>
                     </div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <div className={`flex flex-row w-[300px] text-sm`}>
                         <div className={`flex-1`}>
                             <div className={`w-1/2 text-[#595959]`}>Methods</div>
@@ -133,7 +133,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                             <div className={`w-1/2`}>Google Cloud Platform</div>
                         </div>
                     </div>
-                    <div className={`w-[300px] h-[2px] bg-black my-4`}/>
+                    <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                 </motion.div>
                 
                 <motion.div 
@@ -166,8 +166,8 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`basis-1/3 text-xl lg:text-2xl sm:text-right sm:pl-8 xs:mb-4`}> How might we collect election data in a way that fosters greater depth and quality of election reporting? </div>
-                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden`}/>
-                    <div className={`w-[2px] h-80vh bg-black mt-2 mx-8`}/>
+                    <div className={`w-full h-[1px] bg-black flex-none block sm:hidden`}/>
+                    <div className={`w-[1px] h-80vh bg-black mt-2 mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8`}> 
                         <div className={`mb-2`}>
                             <div className={`text-lg lg:text-xl`}> Opportunity </div>
@@ -208,7 +208,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`basis-1/2 text-sm pr-10`}>Through user interviews with partner news organizations, web-scraping, and an initial ­­­prototype during the 2022 Midterm Elections, <strong>we documented 58 California counties' election reporting protocols.</strong></div>
                     </div>
                     <div className={`pt-4`}>
-                        <div className={`w-full h-[2px] bg-black`}/>
+                        <div className={`w-full h-[1px] bg-black`}/>
                     </div>
                     <div className={`flex flex-row`}>
                         <motion.div 
@@ -350,7 +350,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                 </div>
                             </div>
                         </div>
-                        <div className={`w-full h-[2px] bg-black my-6`}/>
+                        <div className={`w-full h-[1px] bg-black my-6`}/>
                         <div>
                             <div className={`sm:grid sm:grid-cols-3 sm:gap-6 sm:gap-y-8 md:gap-8 text-xs md:text-sm`}>
                                 <div className={`xs:mb-3 sm:mb-auto`}><strong>Intake systems are labor-intensive and clunky</strong>, involving manually updating templates for election night using plaintext, assigning reporters to cover different counties</div>
@@ -393,8 +393,8 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`basis-1/3 text-xl lg:text-2xl text-left mb-6 sm:text-right md:pl-8 xs:mb-4`}> How might we collect election data to supplement existing election reporting at the hyperlocal level? </div>
-                    <div className={`w-full h-[2px] bg-black flex-none block sm:hidden mb-4`}/>
-                    <div className={`w-[2px] h-25vh bg-black mx-8`}/>
+                    <div className={`w-full h-[1px] bg-black flex-none block sm:hidden mb-4`}/>
+                    <div className={`w-[1px] h-25vh bg-black mx-8`}/>
                     <div className={`basis-2/3 flex-grow text-2xl md:text-3xl lg:text-4xl pr-8 max-w-[500px]`}> 
                         <div className={`mb-2`}>
                             <div className={`text-lg lg:text-xl`}> Refinement </div>
@@ -483,7 +483,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                 </ul>
                             </div>
                         </div>
-                        <div className={`w-[2px] h-100vh bg-black mt-2 mx-8`}/>
+                        <div className={`w-[1px] h-100vh bg-black mt-2 mx-8`}/>
                         <div className={`basis-1/2`}>
                             <div className={`text-lg lg:text-xl`}> Learning </div>
                             <div className={`w-full text-sm mt-4`}>I learned that in working on highly technical products with nontechnical users, the greatest impact solution often leans simple.</div>

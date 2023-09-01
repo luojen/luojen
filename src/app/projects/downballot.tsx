@@ -88,17 +88,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`w-full h-[1px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        <Image src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot"/>
-                        {/* <img src="/assets/downballot/final_prototype.gif" /> */}
-                        {/* <Image
-                            src={"/assets/downballot/final_prototype.gif"}
-                            alt="Animated GIF for Downballot"
-                            className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`}
-                            height="300"
-                            width="300"
-                            // blurDataURL="data:..." automatically provided
-                            // placeholder="blur" // Optional blur-up while loading
-                        /> */}
+                        <Image src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] min-h-[200px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot"/>
                     </div>
                 </motion.div>
                 
@@ -163,7 +153,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}><strong>For local newsrooms, collecting, cleaning, and reporting this data takes time and manpower in a time when newsrooms, increasingly understaffed and under-resourced, don't have much of either to spare.</strong></div>
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}>The effect? <strong>Small newsrooms must limit the scope of their coverage</strong> to a few primary districts <strong>at the cost of covering “down ballot” races in smaller municipalities—races that include voting for school boards, referenda, and funding for social services, agenda items that impact voters most.</strong></div>
                     </div>
-                    <img src="/assets/downballot/site_structures.gif" className={`object-contain w-[50%] rounded-xl shadow-lg mb-8 mt-10`}/>
+                    <Image src="/assets/downballot/site_structures.gif" className={`object-contain w-[50%] rounded-xl shadow-lg mb-8 mt-10`} alt="GIF documenting various election site structures"/>
                 </motion.div>
 
                 <motion.div 
@@ -224,31 +214,31 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <motion.div 
                             className={`relative w-1/2 mt-10`}
                         >
-                            <img src="/assets/downballot/ca_counties_by_data.png" className={`object-contain h-[250px] md:h-[300px]`} alt="Map of California county election data" />
+                            <Image src="/assets/downballot/ca_counties_by_data.png" className={`object-contain h-[250px] md:h-[300px]`} alt="Map of California county election data"/>
                             <div className={`flex flex-col absolute top-0 left-48 hidden md:block`}>
                                 <div className={`text-xs pb-1`}>Counties by election data</div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_0.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_0.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>External services</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_1.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_1.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>CSV</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_2.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_2.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>XLS</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_3.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_3.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>Custom HTML</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_4.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_4.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>Text PDF</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_data_5.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_data_5.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>Scanned PDF</div>
                                 </div>
                             </div>
@@ -256,23 +246,23 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <motion.div 
                             className={`relative w-1/2 mt-10`}
                         >
-                            <img src="/assets/downballot/ca_counties_by_population.png" className={`object-contain h-[250px] md:h-[300px]`} alt="Map of California county population data" />
+                            <Image src="/assets/downballot/ca_counties_by_population.png" className={`object-contain h-[250px] md:h-[300px]`} alt="Map of California county population data"/>
                             <div className={`flex flex-col hidden md:block absolute top-0 left-40`}>
                                 <div className={`text-xs pb-1`}>Counties by population</div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_population_0.png" className={`object-contain h-3`}  />
+                                    <Image src="/assets/downballot/ca_counties_by_population_0.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>&gt; 1,000,000 people</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>  
-                                    <img src="/assets/downballot/ca_counties_by_population_1.png" className={`object-contain h-3`}  />
+                                <Image src="/assets/downballot/ca_counties_by_population_1.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>400,000-999,999 people</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_population_2.png" className={`object-contain h-3`}  />
+                                <Image src="/assets/downballot/ca_counties_by_population_2.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>100,000-399,999 people</div>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
-                                    <img src="/assets/downballot/ca_counties_by_population_3.png" className={`object-contain h-3`}  />
+                                <Image src="/assets/downballot/ca_counties_by_population_3.png" className={`object-contain h-3`} alt="Key item"/>
                                     <div className={`text-xs pl-1`}>&lt; 100,000 people</div>
                                 </div>
                             </div>
@@ -292,7 +282,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     whileInView={{ opacity: 1}}
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
-                    <img src="/assets/downballot/midterm_prototype.gif" className={`object-contain w-[80%] rounded-xl shadow-lg mb-8`}/>
+                    <Image src="/assets/downballot/midterm_prototype.gif" className={`object-contain w-[80%] rounded-xl shadow-lg mb-8`} alt="GIF for Downballot midterm prototype"/>
                     <div className={`flex flex-col w-[80%]`}>
                         <div className={`text-xs text-right self-end w-[50%]`}>Our discovery prototype for five Bay Area counties, used in partnership with Bay City News, built with Python, Apps Script, and Google Sheets.</div>
                     </div>
@@ -310,7 +300,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`text-sm text-center sm:px-24`}>For our collaboration with Bay City News, <strong>I made a few mockups</strong> of what our data visualizations might look like. </div>
                     <div className={`flex flex-col sm:flex-row sm:space-x-10 pt-10 justify-center`}>
                         <div className={`flex w-full sm:w-1/2 h-full justify-center sm:justify-end items-center`}>
-                            <img src="/assets/downballot/prototype_1_layout.png" className={`w-[70%] object-contain rounded-xl shadow-lg`}/>
+                            <Image src="/assets/downballot/prototype_1_layout.png" className={`w-[70%] object-contain rounded-xl shadow-lg`} alt="Large placeholder layout for first prototype of Downballot"/>
                         </div>
                         <div className={`w-full sm:w-1/2 flex flex-col justify-center items-center sm:items-start`}>
                             <motion.img 
@@ -349,9 +339,9 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 >
                     <div className={`text-base mb-3 md:absolute md:top-[280px] md:left-0 md:transform md:-rotate-90`}>User Persona</div>
                     <div>
-                        <img src="/assets/downballot/bcn_logo.png" className={`object-contain w-[60px] block md:hidden mb-3`}/>
+                        <Image src="/assets/downballot/bcn_logo.png" className={`object-contain w-[60px] block md:hidden mb-3`} alt="Bay City News logo"/>
                         <div className={`flex flex-row`}>
-                            <img src="/assets/downballot/bcn_logo.png" className={`object-contain w-[100px] ml-6 mr-10 hidden md:block`}/>
+                            <Image src="/assets/downballot/bcn_logo.png" className={`object-contain w-[100px] ml-6 mr-10 hidden md:block`} alt="Bay City News logo"/>
                             <div>
                                 <div className={`text-base md:text-xl mb-3`}>Bay City News</div>
                                 <div className={`flex flex-row text-xs md:text-sm space-x-8`}>
@@ -426,12 +416,12 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`basis-1/3`}/>
                         <div className={`flex flex-col basis-1/3 sm:px-8 pt-8`}>
                             <div className={`text-xs md:text-sm text-center mb-10 block sm:hidden`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
-                            <img src="/assets/downballot/prototype_2_simple_embed_3.png" className={`self-center sm:self-end object-contain rounded-xl shadow-lg flex-none max-w-[300px]`}/>
+                            <Image src="/assets/downballot/prototype_2_simple_embed_3.png" className={`self-center sm:self-end object-contain rounded-xl shadow-lg flex-none max-w-[300px]`}/>
                             <div className={`text-xs md:text-sm text-right mt-10 hidden sm:block`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
                         </div>
                         <div className={`flex flex-col basis-1/3 sm:pr-8 pt-8`}>
-                            <img src="/assets/downballot/prototype_2_simple_embed_2.png" className={`flex-none object-contain rounded-xl shadow-lg max-w-[300px]`}/>
-                            <img src="/assets/downballot/prototype_2_simple_embed_1.png" className={`flex-none object-contain rounded-xl shadow-lg mt-8 max-w-[300px]`}/>
+                            <Image src="/assets/downballot/prototype_2_simple_embed_2.png" className={`flex-none object-contain rounded-xl shadow-lg max-w-[300px]`}/>
+                            <Image src="/assets/downballot/prototype_2_simple_embed_1.png" className={`flex-none object-contain rounded-xl shadow-lg mt-8 max-w-[300px]`}/>
                         </div>
                 </motion.div>
                 
@@ -446,11 +436,11 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                 >
                     <div className={`w-1/2 flex flex-col sm:flex-row justify-start relative mb-10`}>
                         <div className={`mb-4 sm:mb-0 sm:absolute sm:top-10 sm:left-[-2px] text-sm md:text-base sm:transform sm:-rotate-90`}>Original design</div>
-                        <img src="/assets/downballot/customize_before.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
+                        <Image src="/assets/downballot/customize_before.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
                     </div>
                     <div className={`w-1/2 flex flex-col sm:flex-row justify-start relative`}>
                     <div className={`mb-4 sm:mb-0 sm:absolute sm:top-10 sm:left-[-2px] text-sm md:text-base sm:transform sm:-rotate-90`}>Revised design</div>
-                        <img src="/assets/downballot/customize_after.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
+                        <Image src="/assets/downballot/customize_after.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain sm:ml-16`}/>
                     </div>
                 </motion.div>
                
@@ -466,8 +456,8 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 03. Build </div>
                     <div className={`w-full pr-3 pb-3 text-sm`}>Using Scrapy, Postgres, Google Cloud Platform, React, and Python, I built our API. </div>
                     <div className={`h-full flex flex-col justify-start items-center lg:items-start`}>
-                        <img src="/assets/downballot/final_prototype.gif" className={`w-[90%] max-w-[800px] h-auto object-contain -mr-8 md:-mr-12`} alt="Animated GIF demo for Downballot" />
-                        <img src="/assets/downballot/create_prototype.gif" className={`flex-grow object-contain w-[70%] max-w-[800px] rounded-xl shadow-lg mb-8 mt-10 ml-10`}/>
+                        <Image src="/assets/downballot/final_prototype.gif" className={`w-[90%] max-w-[800px] h-auto object-contain -mr-8 md:-mr-12`} alt="Animated GIF demo clicking through site"/>
+                        <Image src="/assets/downballot/create_prototype.gif" className={`flex-grow object-contain w-[70%] max-w-[800px] rounded-xl shadow-lg mb-8 mt-10 ml-10`} alt="Animated GIF demo creating an election graphic"/>
                     </div>
                 </motion.div>
                 

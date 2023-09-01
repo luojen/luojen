@@ -8,7 +8,7 @@ import {
     MotionValue, 
     useAnimation
 } from "framer-motion"
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, Suspense } from 'react'
 import { Data, Project } from '@/app/types/Data';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
@@ -88,13 +88,18 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`w-full h-[1px] bg-black flex-none`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        {/* <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot" /> */}
-                        <Image
+                        <Suspense fallback={<ImageLoading/>}>
+                            <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} alt="Animated GIF demo for Downballot" />
+                        </Suspense>
+                        {/* <Image
                             src={"/assets/downballot/final_prototype.gif"}
                             alt="Animated GIF for Downballot"
+                            className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`}
+                            height="300"
+                            width="300"
                             // blurDataURL="data:..." automatically provided
                             // placeholder="blur" // Optional blur-up while loading
-                        />
+                        /> */}
                     </div>
                 </motion.div>
                 
@@ -504,3 +509,9 @@ export default function Downballot({ className, selectedProject, setSelectedProj
         </div>
     );
 }
+
+function ImageLoading() {
+    return (
+      <div className={`w-[350px] h-5 md:h-10 bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>
+    );
+  }

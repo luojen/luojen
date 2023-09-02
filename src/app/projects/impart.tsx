@@ -404,7 +404,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                 >
                     <div className={`w-full text-sm`}><strong>Our final prototype</strong> was built using React Native.</div>
-                    <div className={`grid grid-cols-4 gap-x-3 sm:gap-x-10 mb-10 mt-6`}>
+                    <div className={`grid grid-cols-4 gap-y-6 gap-x-3 sm:gap-x-10 mb-10 mt-6`}>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_1.png`}/>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_2.png`}/>
                         <img className={`w-full rounded-xl object-contain shadow-lg`} src={`/assets/impart/final_3.png`}/>

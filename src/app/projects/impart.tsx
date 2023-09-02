@@ -60,7 +60,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
             <div className={`h-full w-full mb-8`}>
 
                 <motion.div 
-                    className={`h-full w-full min-h-[1000px] sm:min-h-[700px] mb-8 relative border border-transparent`} 
+                    className={`h-full w-full min-h-[1100px] sm:min-h-[700px] mb-8 relative border border-transparent`} 
                     id="slide-1"
                 >
                     <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData}/>
@@ -104,7 +104,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`w-[300px] h-[1px] bg-black my-4`}/>
                     <Image src="/assets/impart/final_prototype.gif" className={`w-[150px] h-auto object-contain absolute left-0 sm:top-[250px] block sm:hidden`} placeholder={`w-[150px] h-[350px] object-contain absolute left-0 sm:top-[250px] block sm:hidden`} alt="Animated GIF demo for Impart"/>
                     <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                    <Image src="/assets/impart/final_prototype.gif" className={`sm:w-[200px] h-auto object-contain absolute left-96 sm:top-[200px] hidden sm:block`} alt="Animated GIF demo for Impart" placeholder={`sm:w-[200px] h-[400px] object-contain absolute left-96 sm:top-[200px] hidden sm:block`}/>
+                    <Image src="/assets/impart/final_prototype.gif" className={`sm:w-[200px] h-auto object-contain absolute left-96 sm:top-[225px] hidden sm:block`} alt="Animated GIF demo for Impart" placeholder={`sm:w-[200px] h-[400px] object-contain absolute left-96 sm:top-[200px] hidden sm:block`}/>
                 </motion.div>
                 
                 <motion.div 
@@ -271,7 +271,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 </motion.div>
 
                 <motion.div 
-                    className={`h-full w-full mb-8 flex flex-col justify-center`} 
+                    className={`h-fit-content w-full mb-8 flex flex-col justify-center`} 
                     id="slide-6"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}
@@ -419,7 +419,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                 </motion.div>
 
                 <motion.div 
-                    className={`h-full w-full mb-8 flex flex-col min-h-[700px] py-60`} 
+                    className={`h-fit-content w-full mb-8 flex flex-col min-h-[700px] py-60`} 
                     id="slide-10"
                     viewport={{ once: true }}
                     style={{ opacity: 0 }}

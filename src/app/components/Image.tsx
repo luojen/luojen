@@ -18,20 +18,20 @@ type ImageProps = {
 }
 
 export default function Image({ className, src, alt, placeholder }: ImageProps) {
-  const [loaded, setLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleImageLoad = () => {
-    setLoaded(true);
+    setIsLoading(false);
   };
 
   const handleImageError = () => {
-    setLoaded(false);
+    setIsLoading(false);
   };
 
   return (
     <>
         <img src={src} className={className} onLoad={handleImageLoad} onError={handleImageError} alt={alt}/>
-        {!loaded && <div className={`${placeholder} min-h-[5px] bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>}
+        {isLoading && <div className={`${placeholder} min-h-[5px] bg-gradient-to-r from-gray-300 to-gray-200 animate-pulse rounded-md mb-3`}/>}
     </>
   );
 }

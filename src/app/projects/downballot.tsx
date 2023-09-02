@@ -153,7 +153,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}><strong>For local newsrooms, collecting, cleaning, and reporting this data takes time and manpower in a time when newsrooms, increasingly understaffed and under-resourced, don't have much of either to spare.</strong></div>
                         <div className={`w-full lg:w-1/4 pr-3 pb-3`}>The effect? <strong>Small newsrooms must limit the scope of their coverage</strong> to a few primary districts <strong>at the cost of covering “down ballot” races in smaller municipalities—races that include voting for school boards, referenda, and funding for social services, agenda items that impact voters most.</strong></div>
                     </div>
-                    <img src="/assets/downballot/site_structures.gif" className={`object-contain w-[50%] rounded-xl shadow-lg mb-8 mt-10`}/>
+                    <img src="/assets/downballot/site_structures.gif" className={`object-contain min-w-[300px] w-[50%] rounded-xl shadow-lg mb-8 mt-10`}/>
                 </motion.div>
 
                 <motion.div 

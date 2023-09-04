@@ -69,7 +69,7 @@ export default function Row({ className, project, selectedProject, setSelectedPr
                     <div className={`mr-5 mt-3 ml-3`}><div className={`w-10 h-10 md:w-10 md:h-10 lg:w-14 lg:h-14 ${color} rounded-md`}/></div>
                     {/* Title */}
                     <div className={"flex flex-col pr-6"}>
-                        <p className={"text-2xl lg:text-2xl pt-2"} style={{ fontFamily: 'Inter-Semibold', fontWeight: 'bold', fontStyle: 'normal'}}>{project && project["name"]}</p>
+                        <p className={"text-2xl lg:text-2xl pt-2"} style={{ fontFamily: 'SwearDisplay-BoldCilati', fontWeight: 'bold', fontStyle: 'cilati'}}>{project && project["name"]}</p>
                         <p className={"text-sm lg:text-base align-end whitespace-nowrap"}>——{project && project["year"]}</p>
                     </div>
                     {/* Divider */}

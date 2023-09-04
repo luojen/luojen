@@ -15,7 +15,7 @@ type NavigationProps = {
 
 export default function Navigation({ className }: NavigationProps) {
     return (
-        <div className={"sticky top-0 px-4 md:px-4 py-4 flex flex-row bg-white-500"} >
+        <div style={{ fontFamily: 'NeueHaasUnicaW1G-Regular', fontWeight: 'normal', fontStyle: 'regular'}} className={"sticky top-0 px-4 py-4 flex flex-row bg-[#FCFCFC] z-10"} >
             <div>
                 <motion.div
                     whileHover={{ scale: 1.2 }}

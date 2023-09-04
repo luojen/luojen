@@ -22,6 +22,36 @@
 }
 
 @font-face {
+  font-family: 'SwearDisplay-BlackCilati';
+  src: url('../../public/fonts/SwearDisplay-BlackCilati.otf') format('opentype');
+  font-weight: 'black';
+  font-style: 'cilati';
+}
+
+@font-face {
+  font-family: 'SwearDisplay-BlackItalic';
+  src: url('../../public/fonts/SwearDisplay-BlackItalic.otf') format('opentype');
+  font-weight: 'black';
+  font-style: 'italic';
+}
+
+@font-face {
+  font-family: 'SwearDisplay-BoldCilati';
+  src: url('../../public/fonts/SwearDisplay-BoldCilati.otf') format('opentype');
+  font-weight: 'bold';
+  font-style: 'cilati';
+}
+
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Regular';
+  src: url('../../public/fonts/NeueHaasUnicaW1G-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: 'regular';
+}
+
+
+
+@font-face {
   font-family: 'Inter-Black';
   src: url('../../public/fonts/Inter-Black.otf') format('opentype');
   font-weight: normal;

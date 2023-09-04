@@ -68,9 +68,9 @@ export default function Work() {
   }, []);
 
   return (
-    <Layout className={'w-full h-full relative'}>
+    <Layout className={'w-full h-full relative text-[#575757]'}>
       <div className={`lg:block ${selectedProject ? 'hidden' : 'block'} fixed left-0 ${selectedProject ? 'w-[25%]' : 'w-[100%]'} px-8 select-none`} id={'projects'}>
-        <div style={{ fontFamily: 'Inter-Regular', fontWeight: 'normal', fontStyle: 'normal'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
+        <div style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}} className={"text-5xl lg:text-6xl pb-4"}>Work</div>
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
                 {tags.length > 0 ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>}

@@ -29,6 +29,13 @@
 }
 
 @font-face {
+  font-family: 'SwearDisplay-BoldItalic';
+  src: url('../../public/fonts/SwearDisplay-BoldItalic.otf') format('opentype');
+  font-weight: 'bold';
+  font-style: 'italic';
+}
+
+@font-face {
   font-family: 'SwearDisplay-BlackItalic';
   src: url('../../public/fonts/SwearDisplay-BlackItalic.otf') format('opentype');
   font-weight: 'black';
@@ -43,12 +50,47 @@
 }
 
 @font-face {
+  font-family: 'SwearDisplay-Bold';
+  src: url('../../public/fonts/SwearDisplay-Bold.otf') format('opentype');
+  font-weight: 'bold';
+  font-style: 'normal';
+}
+
+
+@font-face {
   font-family: 'NeueHaasUnicaW1G-Regular';
   src: url('../../public/fonts/NeueHaasUnicaW1G-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: 'regular';
 }
 
+@font-face {
+  font-family: 'NeueHaasGroteskTextPro';
+  src: url('../../public/fonts/NeueHaasGroteskTextPro-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskTextPro';
+  src: url('../../public/fonts/NeueHaasGroteskTextPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskTextPro';
+  src: url('../../public/fonts/NeueHaasGroteskTextPro-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskTextPro';
+  src: url('../../public/fonts/NeueHaasGroteskTextPro-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
 
 
 @font-face {

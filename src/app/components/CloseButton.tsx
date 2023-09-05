@@ -28,11 +28,11 @@ export default function CloseButton({ className, selectedProject, setSelectedPro
     };
 
     return (
-        <div className={`${className} absolute top-0 right-0`}>
+        <div className={`${className}`}>
             <motion.button 
-                className={"flex flex-row rounded-full px-4 py-1 justify-center bg-black text-white"}
-                whileHover={{ backgroundColor: "rgba(255, 255, 255, 1)", color: 'rgba(0, 0, 0, 0.8)', border: "1px solid black" }}
-                whileTap={{ scale: 1.1 }}
+                className={"flex flex-row rounded-full px-4 py-1 justify-center bg-[#FCFCFC] text-[#575757]"}
+                whileHover={{ scale:1.1 }}
+                whileTap={{ scale: 1.15 }}
                 onClick={handleCloseClick}
             >
                 <p className={"pr-2 text-xs"} >X</p>

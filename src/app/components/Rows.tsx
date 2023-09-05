@@ -21,6 +21,7 @@ export default function Rows({ className, data, selectedProject, setSelectedProj
 
     return (
         <div className={`${className} min-w-[235px]`}>
+                <div className={`w-full h-px bg-black`}/>
                 {data?.map((project, index) => (
                     <Row key={index} project={project} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
                 ))}

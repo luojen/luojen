@@ -36,7 +36,7 @@ export default function Preview({ className, projectData, selectedProject, setSe
     }, [projectData?.id]);
 
     return (
-        <motion.div className={`${className} px-8 pb-4`}>
+        <motion.div className={`${className} z-9`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'normal'}}>
             {Project}
         </motion.div>
     );

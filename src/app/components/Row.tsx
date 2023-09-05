@@ -64,7 +64,7 @@ export default function Row({ className, project, selectedProject, setSelectedPr
                 transition: { duration: 0.25 },
             }}
             >
-                <div className={`flex flex-row items-start pb-3 ${selectedProject?.id === project?.id ? 'bg-black text-white' : ''}`} onClick={handleClick} >
+                <div className={`flex flex-row items-start pb-3 ${selectedProject?.id === project?.id ? 'bg-[#202020] text-white' : ''}`} onClick={handleClick} >
                     {/* Icon */}
                     <div className={`mr-5 mt-3 ml-3`}><div className={`w-10 h-10 md:w-10 md:h-10 lg:w-14 lg:h-14 ${color} rounded-md`}/></div>
                     {/* Title */}

@@ -44,7 +44,7 @@ export default function Tags({ className, tags, selectedTag, setSelectedTag, sel
     }
 
     return (
-        <div className={'flex flex-row flex-wrap justify-start select-none pb-4 min-w-[235px]'}>
+        <div className={'flex flex-row flex-wrap justify-start select-none pb-2 min-w-[235px] mr-16'}>
             {tagsArray.map((tag, index) => (
                 <Tag 
                     key={index} 

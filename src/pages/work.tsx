@@ -74,7 +74,7 @@ export default function Work() {
           <div className={`flex flex-row`}>
             <div className={'flex flex-col w-full h-full'}>
                 {tags.length > 0 ? <Tags tags={tags} className={`w-full flex-1`} selectedTag={selectedTag} setSelectedTag={setSelectedTag} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <TagsLoading/>}
-                {tags.length <= 0 ?? <div className={`w-full h-px bg-black`}/>}
+                {tags.length == 0 ? <div className={`w-full h-px bg-black`}/> : null}
                 {data.length > 0 ? <Rows data={display} className={'w-full flex-1 overflow-y-scroll overflow-x-hidden no-scrollbar'} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/> : <RowsLoading/>}
             </div>
         </div>

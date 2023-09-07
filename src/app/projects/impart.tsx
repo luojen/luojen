@@ -102,7 +102,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 01. Context </div>
-                        <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>How might we make creative collaboration feel more like play than work?</div>
+                        <div className={`text-xl w-3/4 mb-5`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>How might we make creative collaboration feel more like play than work?</div>
                         <div className={`flex flex-col text-xs space-y-4 mt-4 md:mt-0 w-full sm:w-3/4 sm:max-w-[800px]`}>
                             <div><strong>Artistic collaboration builds meaningful connections</strong> and opens up opportunities for discovering new ways of creating. The initial first step toward <strong>building a network of collaborators and receiving feedback, however, is greatly inhibited by social risk and time to receive feedback.</strong></div>
                             <div>COVID-19 limited opportunities for collaboration by reducing the chance social encounters that might yield potential collaborators.</div>
@@ -121,7 +121,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     >
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 02. Understand </div>
                         <div className={`mt-5`}>
-                            <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Empathy maps</div>
+                            <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Empathy maps</div>
                             <div className={`text-xs mt-3`}><strong>I interviewed five artists</strong> on their experiences collaborating with one another during the pandemic and <strong>created the following empathy maps.</strong></div>
                             <motion.img 
                                 src={`/assets/impart/empathy_map_${mapNumber}.png`} 
@@ -130,11 +130,11 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 whileHover={{ scale: 1.01 }}
                             />
                         </div>
-                        <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>User personas</div>
+                        <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>User personas</div>
                         <div className={`flex flex-col block sm:hidden mt-5`}>
                             <div className={`flex flex-row`}> 
-                                <div className={`flex flex-row justify-center items-center flex-none h-[40px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
-                                    <img className={`h-full h-[20px]`} src={`/assets/impart/user_icon.png`}/>
+                                <div className={`flex flex-row justify-center items-center flex-none h-[50px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-4 mr-4`}>
+                                    <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
                                 </div>
                                 <div className={`flex flex-col`}>
                                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}}>Veronica</div>
@@ -146,8 +146,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 <div className={`text-xs ml-4`}>Veronica expressed feeling disappointed when collaborators dropped off from projects, disliking the rigid, structured nature of collaboration, and how difficult it was to determine how artists act in collaboration.</div>
                             </div>
                             <div className={`flex flex-row mt-10`}> 
-                                <div className={`flex flex-row justify-center items-center flex-none h-[40px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
-                                    <img className={`h-full h-[20px]`} src={`/assets/impart/user_icon.png`}/>
+                                <div className={`flex flex-row justify-center items-center flex-none h-[50px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-4 mr-4`}>
+                                    <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
                                 </div>
                                 <div className={`flex flex-col`}>
                                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}}>Makena</div>
@@ -161,8 +161,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         </div>
                         <div className={`hidden sm:grid grid-cols-2 gap-x-10 mb-10 mt-6 max-w-[800px]`}>
                             <div className={`flex flex-row`}> 
-                                <div className={`flex flex-row justify-center items-center flex-none h-[40px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
-                                    <img className={`h-full h-[20px]`} src={`/assets/impart/user_icon.png`}/>
+                                <div className={`flex flex-row justify-center items-center flex-none h-[50px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-4 mr-4`}>
+                                    <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
                                 </div>
                                 <div className={`flex flex-col`}>
                                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}}>Veronica</div>
@@ -170,8 +170,8 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 </div>
                             </div>
                             <div className={`flex flex-row`}> 
-                                <div className={`flex flex-row justify-center items-center flex-none h-[40px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-6 mr-4`}>
-                                    <img className={`h-full h-[20px]`} src={`/assets/impart/user_icon.png`}/>
+                                <div className={`flex flex-row justify-center items-center flex-none h-[50px] bg-[#D9D9D9] bg-opacity-[25%] rounded-xl p-4 mr-4`}>
+                                    <img className={`h-full`} src={`/assets/impart/user_icon.png`}/>
                                 </div>
                                 <div className={`flex flex-col`}>
                                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}}>Makena</div>
@@ -187,7 +187,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 <div className={`text-xs ml-4`}>Makena expressed feeling shy about sharing her own art, and feeling more connected to other artists by their work itself rather than their specific identities.</div>
                             </div>
                         </div>
-                        <div className={`bg-[#202020] rounded-xl p-4 text-[#FCFCFC] mb-10 flex-none max-w-[700px]`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Daphne and Makena's experiences showed us that although artists desire creative community to seek out new art and inspire their own art, seeking collaborators feels risky.</div>
+                        <div className={`bg-[#202020] rounded-xl p-4 text-[#FCFCFC] mb-10 flex-none max-w-[700px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Daphne and Makena's experiences showed us that although artists desire creative community to seek out new art and inspire their own art, seeking collaborators feels risky.</div>
                     </motion.div>
                 </div>
                 <div className={`h-fit-content w-full p-8 py-20 bg-[#E2E2E2]`} id="slide-3">
@@ -200,7 +200,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div className={`text-center`}>We refined our initial question</div>
-                        <div className={`text-xl w-3/4 text-center`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>How might we make collaboration feel less risky?</div>
+                        <div className={`text-xl w-3/4 text-center`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>How might we make collaboration feel less risky?</div>
                     </motion.div>
                 </div>
 
@@ -214,7 +214,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}> 03. Prototype </div>
-                        <div className={`text-lg lg:text-xl`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Experience prototyping </div>
+                        <div className={`text-lg lg:text-xl`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Experience prototyping </div>
                     <div className={`w-full text-xs mt-4`}>We came up with some initial solutions.</div>
                     <div className={`flex flex-col sm:flex-row mt-7 max-w-[800px]`}>
                         <div className={`flex flex-col sm:flex-row justify-start items-start`}>
@@ -245,7 +245,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         </div>
                     </div>
                     <div className={`w-full h-[1px] bg-[#FCFCFC] mt-[200px]`}/>
-                    <div className={`text-lg lg:text-xl mt-4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Note</div>
+                    <div className={`text-lg lg:text-xl mt-4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Note</div>
                     <div className={`w-full text-xs mt-4`}>We had began our project assuming that collaboration was important for artists, with collaboration encompassing writing, visual art, and music. In user interviews after experience prototyping, we found that <strong>participants had difficulty what type of medium</strong> they should collaborate with. It became clear that <strong>defining the specific domain in which collaboration would take place was an important question</strong> that would shape how we thought about creative community, authenticity, and feedback. <strong>We decided to move forward with visual art being the primary site of collaboration.</strong></div>
                     </motion.div>
                 </div>
@@ -259,7 +259,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                         whileInView={{ opacity: 1}}
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
-                       <div className={`text-lg lg:text-xl`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Low fidelity to high fidelity prototyping </div>
+                       <div className={`text-lg lg:text-xl`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Low fidelity to high fidelity prototyping </div>
                        <div className={`text-xs mt-3`}><strong>Our prototypes sought to accomplish three primary tasks</strong></div>
                        <div className={`flex flex-col sm:flex-row sm:space-x-6 max-w-[900px] mt-5`}>
                             <div className={`bg-[#FCFCFC] basis-1/3 border border-black p-5 md:p-10 rounded-xl mb-5 sm:mb-0`}>
@@ -373,7 +373,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     >
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}>04. Takeaways</div>
                         <div className={`flex flex-col`}>
-                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Outcomes </div>
+                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Outcomes </div>
                             <div className={`mt-4 text-xs`}>
                                 With a team of four, I accomplished the following:
                                 <ul className="list-disc pl-4">
@@ -383,7 +383,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                     <li className="ml-2">Interviewed over 30 users total, from experience prototyping to usability testing</li>
                                 </ul>
                             </div>
-                            <div className={`text-xl w-3/4 pt-6`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Learning </div>
+                            <div className={`text-xl w-3/4 pt-6`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Learning </div>
                             <div className={`w-full text-xs mt-4`}><strong>Narrowing down the specific user we sought to help was important</strong> to establish early-on in the needfinding process.
                                 <ul className="list-disc pl-4">
                                     <li className="ml-2">Mixing mediums meant that users struggled to figure out how their art might work with one another, particularly when we were experience prototyping.</li>

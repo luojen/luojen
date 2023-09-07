@@ -127,7 +127,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`flex flex-col md:flex-row mt-10`}>
                             <div className={`mr-20 w-full md:w-1/4 min-w-[200px]`}>
                                 <div className={`text-xs`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'italic'}}>Pain point #1</div>
-                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Covering live elections is a time and labor-intensive process</div>
+                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Covering live elections is a time and labor-intensive process</div>
                             </div>
                             <div className={'flex flex-col'}>
                                 <div className={`sm:self-center sm:text-center text-xs mb-4 mt-10 md:mt-0`}>Newsrooms must</div>
@@ -141,7 +141,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`flex flex-col md:flex-row mt-16`}>
                             <div className={`mr-20 w-full md:w-1/4 min-w-[200px]`}>
                                 <div className={`text-xs`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'italic'}}>Pain point #2</div>
-                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>There is no standard for election data</div>
+                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>There is no standard for election data</div>
                             </div>
                             <div className={`flex flex-col mt-10 md:mt-0`}>
                                 <img src="/assets/downballot/site_structures.gif" className={`object-contain w-full sm:max-w-[800px] self-end rounded-xl shadow-lg mb-8`}/>
@@ -151,7 +151,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`flex flex-col md:flex-row mt-16`}>
                             <div className={`mr-20 w-full md:w-1/4 min-w-[200px]`}>
                                 <div className={`text-xs`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'italic'}}>Pain point #3</div>
-                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Smaller newsrooms are increasingly understaffed and under-resourced</div>
+                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Smaller newsrooms are increasingly understaffed and under-resourced</div>
                             </div>
                             <div className={`flex flex-col space-y-4 mt-5 md:mt-0 text-xs`}>
                                 <div className={`flex flex-col space-y-4 p-5 bg-[#FFFFFF] rounded-xl w-full sm:max-w-[800px]`}>
@@ -166,7 +166,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         <div className={`flex flex-col md:flex-row mt-16`}>
                             <div className={`mr-20 w-full md:w-1/4 min-w-[200px]`}>
                                 <div className={`text-xs`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'italic'}}>Pain point #4</div>
-                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>There are no existing services that provide election data at the hyper-local level</div>
+                                <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>There are no existing services that provide election data at the hyper-local level</div>
                             </div>
                             <div className={`flex flex-col`}>
                                 <div className={`flex flex-col space-y-4 mt-5 md:mt-0 text-xs mb-16 w-full sm:max-w-[800px]`}>
@@ -191,7 +191,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div className={`w-full h-full flex flex-col md:flex-row`}>
-                            <div className={`text-xl whitespace-nowrap w-1/4 text-right mr-20`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Why hyper-local?</div>
+                            <div className={`text-xl whitespace-nowrap w-1/4 text-right mr-20`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Why hyper-local?</div>
                             <div className={`flex flex-col text-xs space-y-4 mt-4 md:mt-0 w-full sm:w-3/4 sm:max-w-[800px]`}>
                                 <div><strong>“Down ballots,” also called “down-ticket voting,” refer to all of the offices listed below that of the president and vice president</strong>, including voting for county and precinct officials, referenda, school boards, and funding for social services.  </div>
                                 <div><strong>These are items that disproportionately impact voters of color.</strong> Enabling newsrooms to more easily cover down ballot elections fosters greater media awareness around local politics, which brings greater attention to the disproportionate impact that referenda, funding for social services, and that county and precinct officials have on communities of color.</div>
@@ -211,7 +211,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     >
                         <div className={`w-full h-full flex flex-col justify-center items-center pt-8`}>
                             <div className={`text-xs mb-2`} style={{ fontFamily: 'NeueHaasGroteskTextPro', fontWeight: 'normal', fontStyle: 'italic'}}>What we see and hear</div>
-                            <div className={`text-lg max-w-[500px] text-center mb-5 md:mb-0`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Smaller newsrooms are limiting the scope of their coverage to a few primary districts at the cost of covering downballot races in smaller municipalities</div>
+                            <div className={`text-lg max-w-[500px] text-center mb-5 md:mb-0`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Smaller newsrooms are limiting the scope of their coverage to a few primary districts at the cost of covering downballot races in smaller municipalities</div>
                             <div className={`relative w-[300px] md:w-[650px] h-[900px] md:h-[625px] flex flex-col`}>
                                 <motion.img src="/assets/downballot/bubble_right.svg" className='w-[290px] absolute top-0 md:top-[30px] right-0'/>
                                 <div className={`absolute top-[16px] md:top-[50px] right-[45px] w-[225px]`}>
@@ -259,7 +259,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div className={`flex flex-col w-full max-w-[1000px]`}>
-                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>How might we collect election data in a way that fosters greater depth and quality of election reporting?</div>
+                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>How might we collect election data in a way that fosters greater depth and quality of election reporting?</div>
                             <div className={`text-xs my-5`}>We hypothesized that if we could help newsrooms with <strong>collecting live election data</strong>, the effect would be that newsrooms could either <strong>1) broaden their coverage area</strong> or <strong>2) provide more in-depth analysis on elections.</strong></div>
                             <div className={'hidden md:grid grid-cols-4 text-xs w-full gap-x-3 gap-y-3'}>
                                     <div className={`bg-[#202020] p-6 rounded-xl text-center text-[#FCFCFC]`}><strong>Collect live election data</strong> from each voting jurisdiction within their coverage area</div>
@@ -296,12 +296,12 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     >
                         <div className={`flex flex-col w-full max-w-[1000px] text-[#FCFCFC]`}>
                             <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}>02. Prototype</div>
-                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Discovery prototype</div>
+                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Discovery prototype</div>
                             <div className={`flex flex-col text-xs space-y-4 mt-4 w-full sm:w-1/2 max-w-[500px]`}>
                                 <div>We wanted to verify how things worked on election night, and to see exactly what kind of election data we were dealing with.</div>
                                 <div><strong>We wore our best observer hat during the 2022 Midterm Elections</strong>, downloading HTML paths, and preliminary election reports. </div>
                             </div>
-                            <div className={`text-base mt-10`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>We documented all 58 California counties’ election reporting protocols. </div>
+                            <div className={`text-base mt-10`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>We documented all 58 California counties’ election reporting protocols. </div>
                             <div className={`flex flex-row`}>
                                 <motion.div 
                                     className={`relative w-1/2 mt-10`}
@@ -363,9 +363,9 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                     </div>
                                 </motion.div>
                             </div>
-                            <div className={`text-base mt-20`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>We partnered with one news organization to provide election results for five Bay Area counties. </div>
+                            <div className={`text-base mt-20`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>We partnered with one news organization to provide election results for five Bay Area counties. </div>
                             <img src="/assets/downballot/midterm_prototype.gif" className={`mt-10 object-contain w-[80%] rounded-xl shadow-lg`}/>
-                            <div className={`text-base mt-20`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>I also made a few mockups of sample data visualizations which we ran by Bay City News for a future prototype. </div>
+                            <div className={`text-base mt-20`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>I also made a few mockups of sample data visualizations which we ran by Bay City News for a future prototype. </div>
                             <div className={`flex flex-col sm:flex-row sm:space-x-10 pt-10 justify-start`}>
                                 <div className={`flex w-full sm:w-1/2 h-full justify-start sm:justify-end items-center`}>
                                     <img src="/assets/downballot/prototype_1_layout.png" className={`w-[70%] object-contain rounded-xl shadow-lg`}/>
@@ -405,7 +405,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div className={`w-full h-full flex flex-col items-center justify-center`}>
-                            <div className={`text-xl whitespace-nowrap w-1/4 text-right mr-20`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Findings from discovery</div>
+                            <div className={`text-xl whitespace-nowrap w-1/4 text-right mr-20`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Findings from discovery</div>
                             <div className={`text-xs max-w-[500px] text-center flex flex-col space-y-3 mt-5`}>
                                 <div><strong>1. Quality of online election reporting increasingly declines away from population-dense areas</strong></div>
                                 <div><strong>2.</strong> Each news organization has its own intake system and reporters rely on systems they have used before because <strong>reporters lack the technical knowledge</strong> </div>
@@ -427,7 +427,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     >
                         <div className={`flex flex-col w-full max-w-[1000px]`}>
                         <div className={`text-xs mb-2`}>We refined our initial question</div>
-                        <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>How might we collect election data in a way that fosters greater depth and quality of election reporting?</div>
+                        <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>How might we collect election data in a way that fosters greater depth and quality of election reporting?</div>
                         <div className={`flex flex-col text-xs space-y-4 my-6 mb-10 w-full sm:max-w-[650px]`}>
                             <div>After discovery, we learned that standardizing pre-election data was a prerequisite to collecting vote totals. Candidate information was as difficult to collect as vote totals, and would have an equally-sized impact in increasing the quality of election reporting for local newsrooms. <strong>We decided to shift our project's focus from aggregating vote totals toward collecting pre-election data.</strong> </div>
                             <div>Additionally, <strong>it became clear that our specific domain space and target users were nontechnical users</strong> who had existing protocols and content management systems. With this in mind, <strong>we shifted our project toward producing simple, embedded charts</strong> rather than sophisticated visualizations.</div>
@@ -470,15 +470,15 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                         transition={{ type: "easeIn", duration: 0.5, delay: 0.25}}
                     >
                         <div className={`flex flex-col w-full max-w-[1000px]`}>
-                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Low fidelity to high fidelity</div>
+                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Low fidelity to high fidelity</div>
                             <div className={`w-full sm:w-1/2 max-w-[500px] text-xs mt-4`}>Once we finalized a product direction, I turned our prototypes into high-fidelity designs by creating a design system that was focused on simplicity for nontechnical reporters.</div>
-                            <div className={`text-base mt-6`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Three sketches for a low fidelity embeddable graphic</div>
+                            <div className={`text-base mt-6`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Three sketches for a low fidelity embeddable graphic</div>
                             <div className={`flex flex-col md:flex-row justify-start items-start w-full space-y-3 md:space-y-0 md:space-x-3 md:max-w-[700px] mt-5`}>
                                 <img src="/assets/downballot/prototype_2_simple_embed_3.png" className={`flex-none object-contain rounded-xl shadow-lg w-3/4 sm:w-1/2 md:w-1/3`}/>
                                 <img src="/assets/downballot/prototype_2_simple_embed_2.png" className={`flex-none object-contain rounded-xl shadow-lg w-3/4 sm:w-1/2 md:w-1/3`}/>
                                 <img src="/assets/downballot/prototype_2_simple_embed_1.png" className={`flex-none object-contain rounded-xl shadow-lg w-3/4 sm:w-1/2 md:w-1/3`}/>
                             </div>
-                            <div className={`text-base mt-16`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}>Modifying the embeddable graphic from highly customizable to a simple copy and paste</div>
+                            <div className={`text-base mt-16`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Modifying the embeddable graphic from highly customizable to a simple copy and paste</div>
                             <div className={`flex flex-col md:flex-row w-full justify-start items-start mt-8 space-y-5 md:space-y-0 md:space-x-5`}>
                                 <img src="/assets/downballot/customize_before.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain rounded-xl shadow-lg`}/>
                                 <img src="/assets/downballot/customize_after.png" className={`min-w-[200px] w-[300px] sm:w-full object-contain rounded-xl shadow-lg`}/>
@@ -516,7 +516,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     >
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}>04. Takeaways</div>
                         <div className={`flex flex-col`}>
-                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Outcomes </div>
+                            <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Outcomes </div>
                             <div className={`mt-4 text-xs`}>
                                 As a solo designer and engineer, I was able to accomplish the following:
                                 <ul className="list-disc pl-4">
@@ -525,7 +525,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                     <li className="ml-2">Successfully led and tested two prototypes with two different partner organizations</li>
                                 </ul>
                             </div>
-                            <div className={`text-xl w-3/4 pt-6`} style={{ fontFamily: 'SwearDisplay-BoldItalic', fontWeight: 'bold', fontStyle: 'italic'}}> Learning </div>
+                            <div className={`text-xl w-3/4 pt-6`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Learning </div>
                             <div className={`w-full text-xs mt-4`}>I learned that in working on highly technical products with nontechnical users, the greatest impact solution often leans simple.</div>
                             <div className={`w-full text-xs mt-4`}>While <strong>we assumed that local newsrooms wanted complex elections reporting visuals</strong> popularly used for federal and state level elections, <strong>but the nontechnical nature of their staff and their reluctance to leave existing content management systems</strong> meant that <strong>the simpler the visuals, the better</strong>.</div>
                             <div className={`w-full text-xs mt-4`}><strong>Longterm projects</strong>, particularly elections, <strong>require adjusting prototype timelines</strong> to accommodate for domain-specific schedules. I like to think of this as the feasibility component to designing, realizing futures that don't yet exist and making them possible. Luckily, we had enough funding for a few iterations, although we would have loved more time and funding to work on the project.</div>

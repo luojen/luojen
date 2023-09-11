@@ -15,6 +15,7 @@ import Downballot from '../projects/downballot';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import Impart from '../projects/impart';
+import Mempano from '../projects/mempano';
 
 type PreviewProps = {
     className?: string,
@@ -32,6 +33,8 @@ export default function Preview({ className, projectData, selectedProject, setSe
             setProject(<Downballot setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
         } else if (projectData?.id == 'impart') {
             setProject(<Impart setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
+        } else if (projectData?.id == 'mempano') {
+            setProject(<Mempano setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
         }
     }, [projectData?.id]);
 

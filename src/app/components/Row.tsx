@@ -37,6 +37,8 @@ export default function Row({ className, project, selectedProject, setSelectedPr
             setColor('bg-blue-400');
         } else if (project?.id == "impart") {
             setColor('bg-yellow-400');
+        } else if (project?.id == "mempano") {
+            setColor('bg-red-400');
         }
     }, [project?.color, project?.id]);
 

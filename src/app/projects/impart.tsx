@@ -218,7 +218,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     <div className={`w-full text-xs mt-4`}>We came up with some initial solutions.</div>
                     <div className={`flex flex-col sm:flex-row mt-7 max-w-[800px]`}>
                         <div className={`flex flex-col sm:flex-row justify-start items-start`}>
-                            <div className={`flex flex-col justify-start items-start mr-2 sm:mr-6 mb-5 sm:mb-0`}><img className={`flex-none w-[30px] sm:w-[40px] sm:h-full`} src={`/assets/impart/1_icon.svg`}/></div>
+                            <div className={`flex flex-col justify-start items-start mr-2 sm:mr-6 mb-5 sm:mb-0`}><img className={`flex-none w-[30px]`} src={`icons/1_icon_white.svg`}/></div>
                             <div className={`flex flex-col space-y-3 mb-5 max-w-[400px] lg:max-w-[600px] text-xs`}>
                                 <div className={``}><strong>Idea:</strong> Create a social media platform solely dedicated to allowing anonymous artists to connect and grow a following.</div>
                                 <div className={``}><strong>Assumption: </strong>It is possible to make connections between strangers without revealing your identity.</div>
@@ -235,7 +235,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                     </div>
                     <div className={`flex flex-col sm:flex-row mt-16`}>
                         <div className={`flex flex-col sm:flex-row justify-start items-start`}>
-                            <div className={`flex flex-col justify-start items-start mr-2 sm:mr-6 mb-5 sm:mb-0`}><img className={`flex-none w-[30px] sm:w-[40px] sm:h-full`} src={`/assets/impart/2_icon.svg`}/></div>
+                        <div className={`flex flex-col justify-start items-start mr-2 sm:mr-6 mb-5 sm:mb-0`}><img className={`flex-none w-[30px]`} src={`icons/2_icon_white.svg`}/></div>
                             <div className={`flex flex-col space-y-3 mb-5 max-w-[400px] lg:max-w-[600px] text-xs`}>
                                 <div className={``}><strong>Idea: </strong>Create a collaboration platform that transforms collaboration into a game, allowing artists to piecemeal feedback by playing on one another's ideas.</div>
                                 <div className={``}><strong>Assumption: </strong>Building off one another's work is rewarding for artists.</div>

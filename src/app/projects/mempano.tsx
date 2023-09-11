@@ -13,6 +13,7 @@ import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import { useInView } from 'react-intersection-observer';
 import Image from '../components/Image';
+import ReactSimplyCarousel from 'react-simply-carousel';
 
 type MempanoProps = {
     className?: string,
@@ -23,6 +24,8 @@ type MempanoProps = {
 
 
 export default function Mempano({ className, selectedProject, setSelectedProject, projectData }: MempanoProps) {
+
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
     return (
         <div className={`${className} h-[50%] md:h-full w-full relative`}>            
@@ -129,8 +132,35 @@ export default function Mempano({ className, selectedProject, setSelectedProject
                                 </div>
                             </div>
                         </div>
-                        <div className={`flex flex-col sm:flex-row text-sm mt-10 max-w-[800px]`}>
-                            <div className={`basis-1/3`}>Prior work exploring different mediums for representing spatial models:</div>
+                        <div className={`flex flex-col sm:flex-row text-sm mt-16 max-w-[800px] pb-12`}>
+                            <div className={`basis-1/3 mr-16`}>Prior work exploring different mediums for representing spatial models:</div>
+                            <div className={`mt-5 sm:mt-0 grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-8 basis-2/3`}>
+                                <div className={`flex flex-col select-none pointer-events-none`}>
+                                    <div className={`flex flex-col justify-start items-start`}><img className={`flex-none select-none h-[100px] w-auto object-contain`} src={`assets/mempano/prior_work_1.png`}/></div>
+                                    <div className={`mt-3 max-w-[150px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Zoomshop</div>
+                                    <div className={`text-xs max-w-[150px] mt-1`}>Model for manipulating certain elements in an image to different perspectives</div>
+                                </div>   
+                                <div className={`flex flex-col select-none pointer-events-none`}>
+                                    <div className={`flex flex-col justify-start items-start`}><img className={`flex-none select-none h-[100px] w-auto object-contain`} src={`assets/mempano/prior_work_2.png`}/></div>
+                                    <div className={`mt-3 max-w-[150px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Eevee</div>
+                                    <div className={`text-xs max-w-[150px] mt-1`}>System built to empower novice users in the task of editing images</div>
+                                </div>   
+                                <div className={`flex flex-col select-none pointer-events-none`}>
+                                    <div className={`flex flex-col justify-start items-start`}><img className={`flex-none select-none h-[100px] w-auto object-contain`} src={`assets/mempano/prior_work_3.png`}/></div>
+                                    <div className={`mt-3 max-w-[150px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Memory Through Design</div>
+                                    <div className={`text-xs max-w-[150px] mt-1`}>Uses a 2D mapping tool for their users to record mental models on home placemaking</div>
+                                </div>   
+                                <div className={`flex flex-col select-none pointer-events-none`}>
+                                    <div className={`flex flex-col justify-start items-start`}><img className={`flex-none select-none h-[100px] w-auto object-contain`} src={`assets/mempano/prior_work_4.png`}/></div>
+                                    <div className={`mt-3 max-w-[150px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Photo Tourism Project</div>
+                                    <div className={`text-xs max-w-[150px] mt-1`}>Utilizes collections of user photos to create 3D models of scenes</div>
+                                </div>   
+                                <div className={`flex flex-col select-none pointer-events-none`}>
+                                    <div className={`flex flex-col justify-start items-start`}><img className={`flex-none select-none h-[100px] w-auto object-contain`} src={`assets/mempano/prior_work_5.png`}/></div>
+                                    <div className={` mt-3  max-w-[150px]`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>Automatic Generation of Tourist Maps</div>
+                                    <div className={`text-xs max-w-[150px] mt-1`}>Automatically generates a simplified 2D map attuned to the mental model of tourists navigating cities</div>
+                                </div> 
+                            </div>  
                         </div>
                     </motion.div>
                 </div>
@@ -298,6 +328,11 @@ export default function Mempano({ className, selectedProject, setSelectedProject
                                     <div className={`flex flex-col space-y-3 mt-2`}>
                                         <div>For the first 6/12 participants, we showed them an unedited panorama, and then an edited panorama. </div>
                                         <div>For the other 6/12 participants, we showed them an edited panorama, and then an unedited panorama. </div>
+                                        <div className={`flex flex-row max-w-[280px]`}>
+                                            <div className={`flex flex-col items-center justify-center p-3 `}><div className={`text-center`}><strong>View unmodified panorama from study 1</strong></div></div>
+                                            <div className={`flex flex-col items-center justify-center w-1/3`}><div className={`flex flex-col justify-start items-start  flex-none`}><img className={`flex-none w-[10px]`} src={`icons/arrow_bidirectional.svg`}/></div></div>
+                                            <div className={`flex flex-col items-center justify-center p-3 `}><div className={`text-center`}><strong>View modified panorama from study 1</strong></div></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`p-4 bg-[#E2E2E2] rounded-xl mt-3`}>
@@ -355,8 +390,11 @@ export default function Mempano({ className, selectedProject, setSelectedProject
                         <div style={{ fontFamily: 'SwearDisplay-Bold', fontWeight: 'bold', fontStyle: 'roman'}} className={`flex-1 text-2xl md:text-3xl lg:text-4xl mb-4`}>05. Takeaways</div>
                         <div className={`flex flex-col`}>
                             <div className={`text-xl w-3/4`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}> Outcomes </div>
-                            <div className={`flex flex-col sm:flex-row text-sm`}>
-                                <div className={`flex flex-col space-y-3`}>
+                            <div className={`flex flex-col sm:flex-row text-sm mt-5`}>
+                                <div className={`sm:mr-6 h-[500px] sm:h-auto sm:basis-1/2`}>
+                                    <iframe src="/assets/mempano/final_paper.pdf" title="Mempano Paper" className={`rounded-xl h-full w-full`}/>
+                                </div>
+                                <div className={`mt-5 sm:mt-0 flex flex-col space-y-3 basis-1/2`}>
                                     <div><strong>We were able to identify a unique contribution</strong> within the space of image-editing and scoped the problem to novice-level users. Not only did we successfully identify a problem space, but <strong>we designed and executed 2 user studies with a total of 18 participants.</strong> In our team of four, <strong>we presented our findings at Stanford’s HCI Forum.</strong></div>
                                     <div><strong>Collective memory and narratives of local history can drastically shape the ways people imagine a neighborhood’s present situation and future development. </strong></div>
                                     <div>These narratives are mostly text-based, however. One of the most exciting applications of Mempano is toward broadening the ability to <strong>visually create multiple narratives and histories of a particular location</strong>, particularly helpful to participatory community development approaches. </div>

@@ -12,7 +12,7 @@ import { Data, Project } from '@/app/types/Data';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import { useInView } from 'react-intersection-observer';
-import Image from '../components/Image';
+import Image from '../components/Blur';
 
 type ImpartProps = {
     className?: string,

@@ -12,7 +12,7 @@ import { Data, Project } from '@/app/types/Data';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import { useInView } from 'react-intersection-observer';
-import Image from '../components/Image';
+import Blur from '../components/Blur';
 
 type DownBallotProps = {
     className?: string,
@@ -65,7 +65,18 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`w-full h-[1px] bg-[#FCFCFC]`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[500px] h-[200px] md:h-[350px] object-contain absolute xs:left-0 xs:top-5 xs:ml-0 sm:left-auto sm:top-auto sm:bottom-4 right-8 md:right-12`} alt="Animated GIF demo for Downballot"/>
+                        <div className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`}>
+                            {/* <Image
+                                src={FinalPrototypeGIF.src}
+                                alt="Final prototype as a GIF for Downballot"
+                                fill={true}
+                                className={`object-contain`}
+                                placeholder='blur'
+                                blurDataURL={FinalPrototypeGIF.src}
+                            /> */}
+                            <Blur src={"/assets/downballot/final_prototype.gif"} alt={"GIF of final prototype for Downballot"}/>
+                        </div>
+                        {/* <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[500px] h-[200px] md:h-[350px] object-contain absolute xs:left-0 xs:top-5 xs:ml-0 sm:left-auto sm:top-auto sm:bottom-4 right-8 md:right-12`} alt="Animated GIF demo for Downballot"/> */}
                     </div>
                 </div>
 

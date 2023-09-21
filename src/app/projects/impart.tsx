@@ -47,7 +47,7 @@ export default function Impart({ className, selectedProject, setSelectedProject,
 
                 <div className={`h-full w-full min-h-[1200px] sm:min-h-[850px] p-8 flex flex-col bg-[#202020] text-[#FCFCFC] relative`} id="slide-1">
                     <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData} className={`self-end`}/>
-                    <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-sm lg:text-base`}>IMPART</div>
+                    <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-base`}>Impart</div>
                     <div className={`flex-1 text-3xl md:text-4xl mt-24 mb-4 max-w-[900px]`}>
                         <span className={`mr-2`}>Less talking and more making—fostering creative collaboration between artists.</span>
                         <span style={{ fontFamily: 'NeueHaasUnicaW1G-Regular', fontWeight: 'normal', fontStyle: 'regular'}}  className={`text-base lg:text-s whitespace-nowrap`}>(January ‘21-March '21)</span>

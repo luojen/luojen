@@ -59,7 +59,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
 
                 <div className={`h-full w-full min-h-[800px] sm:min-h-[700px] p-8 flex flex-col bg-[#202020] text-[#FCFCFC] relative`} id="slide-1">
                     <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData} className={`self-end`}/>
-                    <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-sm lg:text-base`}>DOWNBALLOT</div>
+                    <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-base`}>Downballot</div>
                     <div className={`flex-1 text-3xl md:text-4xl mt-24 mb-4`}>
                         <span className={`mr-2`}>High-quality, customizable data visualizations for hyper-local races on election night. </span>
                         <span style={{ fontFamily: 'NeueHaasUnicaW1G-Regular', fontWeight: 'normal', fontStyle: 'regular'}}  className={`text-base lg:text-s whitespace-nowrap`}>(August ‘22—July ‘23)</span>
@@ -67,10 +67,10 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`w-full h-[1px] bg-[#FCFCFC]`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        {/* <div className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`}> */}
-                        {/* <CustomImage className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} src={"/assets/downballot/final_prototype.gif"} alt={"GIF of final prototype for Downballot"}/> */}
-                        {/* </div> */}
-                        <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[500px] h-[200px] md:h-[350px] object-contain absolute xs:left-0 xs:top-5 xs:ml-0 sm:left-auto sm:top-auto sm:bottom-4 right-8 md:right-12`} alt="Animated GIF demo for Downballot"/>
+                        <div className={`ml-4`}>
+                        <CustomImage className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} src={"/assets/downballot/final_prototype.gif"} alt={"GIF of final prototype for Downballot"}/>
+                        </div>
+                        {/* <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[500px] h-[200px] md:h-[350px] object-contain absolute xs:left-0 xs:top-5 xs:ml-0 sm:left-auto sm:top-auto sm:bottom-4 right-8 md:right-12`} alt="Animated GIF demo for Downballot"/> */}
                     </div>
                 </div>
 

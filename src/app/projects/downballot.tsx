@@ -12,7 +12,9 @@ import { Data, Project } from '@/app/types/Data';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import { useInView } from 'react-intersection-observer';
-import Blur from '../components/Blur';
+import CustomImage from '../components/CustomImage';
+import Image from 'next/image';
+import FinalPrototypeGIF from '../../../public/assets/downballot/final_prototype.gif';
 
 type DownBallotProps = {
     className?: string,
@@ -66,15 +68,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
                         {/* <div className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`}> */}
-                            {/* <Image
-                                src={FinalPrototypeGIF.src}
-                                alt="Final prototype as a GIF for Downballot"
-                                fill={true}
-                                className={`object-contain`}
-                                placeholder='blur'
-                                blurDataURL={FinalPrototypeGIF.src}
-                            /> */}
-                            {/* <Blur src={"/assets/downballot/final_prototype.gif"} alt={"GIF of final prototype for Downballot"}/> */}
+                        {/* <CustomImage className={`w-[350px] h-[300px] md:w-[600px] md:h-[400px] absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} src={"/assets/downballot/final_prototype.gif"} alt={"GIF of final prototype for Downballot"}/> */}
                         {/* </div> */}
                         <img src="/assets/downballot/final_prototype.gif" className={`w-[350px] md:w-[600px] h-auto object-contain absolute xs:left-0 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} placeholder={`w-[300px] md:w-[500px] h-[200px] md:h-[350px] object-contain absolute xs:left-0 xs:top-5 xs:ml-0 sm:left-auto sm:top-auto sm:bottom-4 right-8 md:right-12`} alt="Animated GIF demo for Downballot"/>
                     </div>
@@ -155,6 +149,7 @@ export default function Downballot({ className, selectedProject, setSelectedProj
                                 <div className={`text-lg`} style={{ fontFamily: 'SwearDisplay-BlackItalic', fontWeight: 'black', fontStyle: 'cilati'}}>There is no standard for election data</div>
                             </div>
                             <div className={`flex flex-col mt-10 md:mt-0`}>
+                                {/* <CustomImage className={`w-full sm:max-w-[800px] h-[300px] self-end rounded-xl shadow-lg mb-8`} src={"/assets/downballot/site_structures.gif"} alt={"GIF of final prototype for Downballot"}/> */}
                                 <img src="/assets/downballot/site_structures.gif" className={`object-contain w-full sm:max-w-[800px] self-end rounded-xl shadow-lg mb-8`}/>
                                 <div className={`self-end text-end text-xs max-w-[300px]`}>Each jurisdiction maintains unique sites for hosting election data, maintain election data in unique data formats, and release election results on separate schedules.</div>
                             </div>

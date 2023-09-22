@@ -41,7 +41,7 @@ export default function Mempano({ className, selectedProject, setSelectedProject
                     <div className={`w-full h-[1px] bg-[#FCFCFC]`}/>
                     <div className={`h-full flex flex-col justify-end relative`}>
                         <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
-                        <img src="/assets/mempano/chinatown_panorama_edited.png" className={`w-[350px] md:w-[500px] h-auto object-contain absolute xs:left-8 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} />
+                        {/* <img src="/assets/mempano/chinatown_panorama_edited.png" className={`w-[350px] md:w-[500px] h-auto object-contain absolute xs:left-8 xs:top-5 xs:-ml-8 sm:left-auto sm:top-auto sm:bottom-4 sm:right-0`} /> */}
                     </div>
                 </div>
 

@@ -16,9 +16,12 @@ type CustomImageProps = {
     src: string,
     alt: string,
     className: string,
+    fill?: boolean,
+    height?: number,
+    width?: number
 }
 
-export default function CustomImage({ className, src, alt }: CustomImageProps) {
+export default function CustomImage({ className, src, alt, fill, height, width }: CustomImageProps) {
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -37,12 +40,14 @@ export default function CustomImage({ className, src, alt }: CustomImageProps) {
 
 
   return (
-    <div style={background} className={`rounded-xl ${className}`}>
+    <div style={background} className={`rounded-xl ${className} ${imageLoaded ? '' : 'animate-pulse'}`}>
       <Image
         src={src}
         alt={alt}
-        fill={true}
-        className={`object-contain h-full w-full`}
+        fill={fill}
+        width={width}
+        height={height}
+        className={`object-contain rounded-xl`}
         onLoad={handleImageLoad}
         style={{
           opacity: inView ? 0 : 1,

@@ -12,7 +12,7 @@ import { Data, Project } from '@/app/types/Data';
 import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import { useInView } from 'react-intersection-observer';
-import Image from '../components/CustomImage';
+import CustomImage from '../components/CustomImage';
 
 type ImpartProps = {
     className?: string,
@@ -84,9 +84,11 @@ export default function Impart({ className, selectedProject, setSelectedProject,
                                 <div className={`w-1/2`}>Visual Design</div>
                             </div>
                         </div>
-                        <img src="/assets/impart/final_prototype.gif" className={`block sm:hidden w-[150px] h-auto object-contain mt-[24px]`} alt="Animated GIF demo for Impart"/>
+                        <CustomImage src="/assets/impart/final_prototype.gif" fill={false} width={150} height={250} className="block sm:hidden w-[150px] h-auto object-contain mt-[24px]" alt="Animated GIF demo for Impart"/>
+                        {/* <img src="/assets/impart/final_prototype.gif" className={`block sm:hidden w-[150px] h-auto object-contain mt-[24px]`} alt="Animated GIF demo for Impart"/> */}
                     </div>
-                    <img src="/assets/impart/final_prototype.gif" className={`hidden sm:block sm:w-[200px] h-auto object-contain absolute right-[100px] top-[350px]`} alt="Animated GIF demo for Impart"/>
+                    <CustomImage src="/assets/impart/final_prototype.gif" fill={false} width={200} height={300} className="hidden sm:block sm:w-[200px] h-auto object-contain absolute right-[100px] top-[350px]" alt="Animated GIF demo for Impart"/>
+                    {/* <img src="/assets/impart/final_prototype.gif" className={`hidden sm:block sm:w-[200px] h-auto object-contain absolute right-[100px] top-[350px]`} alt="Animated GIF demo for Impart"/> */}
                     <div className={`h-full flex flex-col justify-end relative`}>
                     <ScrollButton className={`absolute xs:bottom-10 xs:left-0 sm:top-auto sm:bottom-10`}/>
                     </div>

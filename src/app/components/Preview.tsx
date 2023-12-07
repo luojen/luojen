@@ -16,6 +16,8 @@ import ScrollButton from '../components/ScrollButton';
 import CloseButton from '../components/CloseButton';
 import Impart from '../projects/impart';
 import Mempano from '../projects/mempano';
+import Cantor1 from '../projects/cantor_1';
+import Cantor2 from '../projects/cantor_2';
 
 type PreviewProps = {
     className?: string,
@@ -35,6 +37,10 @@ export default function Preview({ className, projectData, selectedProject, setSe
             setProject(<Impart setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
         } else if (projectData?.id == 'mempano') {
             setProject(<Mempano setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
+        } else if (projectData?.id == "cantor_1") {
+            setProject(<Cantor1 setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
+        } else if (projectData?.id == "cantor_2") {
+            setProject(<Cantor2 setSelectedProject={setSelectedProject} selectedProject={selectedProject} projectData={projectData}/>);
         }
     }, [projectData?.id]);
 

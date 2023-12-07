@@ -31,7 +31,7 @@ export default function Cantor1({ className, selectedProject, setSelectedProject
                     <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData} className={`self-end`}/>
                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-base`}>Installation</div>
                     <div className={`mt-10`}>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tlj51om5tMA?si=Dys8ysyHly35f1Z1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tlj51om5tMA?si=Dys8ysyHly35f1Z1&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
 
                 </div>

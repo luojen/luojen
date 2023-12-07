@@ -31,7 +31,7 @@ export default function Cantor2({ className, selectedProject, setSelectedProject
                     <CloseButton selectedProject={selectedProject} setSelectedProject={setSelectedProject} projectData={projectData} className={`self-end`}/>
                     <div style={{ fontFamily: 'SwearDisplay-BlackCilati', fontWeight: 'black', fontStyle: 'cilati'}} className={`absolute text-base`}>Installation</div>
                     <div className={`mt-10`}>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D0cz_3hIA88?si=-PeXjRcEqffmvpgX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D0cz_3hIA88?si=-PeXjRcEqffmvpgX&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                     <div className={`mt-10 h-full`}>
                         <iframe src="/assets/cantor_2/process_paper.pdf" title="Compression / Decompression Paper" className={`rounded-xl h-full w-full`}/>
